@@ -1,0 +1,339 @@
+gsis_player_id,football_name,first_name,last_name,position,target,total_snaps,rookie_season,shrine_bowl_year,cohort,height,weight,forty_yd_dash,bench_reps_of_225,standing_vertical,three_cone,twenty_yard_shuttle,standing_broad_jump,hand_size,arm_length,wingspan,team_name,team_code,conference
+350698,Dwight,Dwight,McGlothern,DC,0.0,35.0,2024.0,2024,VALIDATE,73.875,189.0,4.47,,31.0,7.23,4.33,111.0,8.5,31.0,73.75,Arkansas Razorbacks,ARUN,Southeastern Conference
+336849,Hunter,Hunter,Nourzad,OC,0.0,107.0,2024.0,2024,VALIDATE,75.125,319.0,,27.0,,,,,10.75,33.125,79.375,Penn State Nittany Lions,PAST,Big Ten Conference
+362959,Jaden,Jaden,Shirden,RB,0.0,,,2024,VALIDATE,68.0,189.0,4.45,,34.5,,,117.0,9.25,28.75,69.625,Monmouth Hawks,NJMO,Colonial Athletic Association
+324852,David,David,Ugwoegbu,DE,0.0,,,2024,VALIDATE,75.875,243.0,4.86,21.0,28.5,7.56,4.71,116.0,10.25,33.75,80.5,Houston Cougars,TXHO,Big Twelve Conference
+304792,E.J.,Ernest,Perry,,0.0,,,2022,TRAIN,73.625,208.0,4.65,,34.5,6.85,4.18,123.0,9.0,32.0,75.5,Brown Bears,RIBR,Ivy League
+330326,Jared,Jared,Harrison-Hunte,DT,,,,2025,HOLDOUT,75.125,290.0,4.86,,32.0,7.76,4.65,111.0,9.5,33.375,79.75,SMU Mustangs,TXMU,Atlantic Coast Conference
+305581,Chigoziem,Chigoziem,Okonkwo,TE,1.0,601.0,2022.0,2022,TRAIN,74.5,243.0,4.52,13.0,35.5,7.19,4.45,110.0,9.75,32.75,78.125,Maryland Terrapins,MDUN,Big Ten Conference
+305396,Jashaun,Jashaun,Corbin,,0.0,,,2022,TRAIN,71.125,203.0,4.6,11.0,34.0,7.06,4.25,110.0,9.5,31.875,76.0,Florida State Seminoles,FLST,Atlantic Coast Conference
+351359,Robert,Robert,Longerbeam,DC,,,,2025,HOLDOUT,70.875,174.0,4.39,,36.5,6.76,4.25,134.0,8.5,31.625,76.5,Rutgers Scarlet Knights,NJRU,Big Ten Conference
+373367,Trey,Trey,Taylor,DS,0.0,155.0,2024.0,2024,VALIDATE,72.75,206.0,4.59,22.0,37.5,6.9,4.13,123.0,9.25,32.125,76.5,Air Force Falcons,COAF,Mountain West Conference
+304628,Lucas,Lucas,Krull,,0.0,,,2022,TRAIN,78.125,253.0,4.64,,35.0,7.16,4.35,120.0,9.5,,80.0,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+348991,Elijah,Elijah,Roberts,OB,,,,2025,HOLDOUT,75.5,292.0,4.78,25.0,31.5,,4.78,116.0,10.5,34.0,82.25,SMU Mustangs,TXMU,Atlantic Coast Conference
+305338,Baylon,Baylon,Spector,IB,0.0,98.0,2022.0,2022,TRAIN,73.125,231.0,4.6,19.0,36.0,6.93,4.23,122.0,10.0,31.5,75.625,Clemson Tigers,SCCL,Atlantic Coast Conference
+325360,Caedan,Caedan,Wallace,OG,0.0,145.0,2024.0,2024,VALIDATE,76.0,314.0,5.15,,31.0,7.73,4.96,116.0,10.75,34.0,82.6,Penn State Nittany Lions,PAST,Big Ten Conference
+325610,Deantre,Deantre,Prince,DC,0.0,125.0,2024.0,2024,VALIDATE,72.125,184.0,4.38,12.0,37.5,7.46,,125.0,8.625,31.125,74.25,Ole Miss Rebels,MSUN,Southeastern Conference
+309574,David,David,White,WR,0.0,,,2024,VALIDATE,74.125,201.0,4.58,14.0,36.0,7.05,4.07,123.0,9.5,31.625,75.75,Western Carolina Catamounts,NCWE,Southern Conference
+349410,Lideatrick,Lideatrick,Griffin,WR,0.0,,,2024,VALIDATE,72.25,182.0,4.43,,35.5,7.04,4.32,124.0,9.375,30.5,73.625,Mississippi State Bulldogs,MSST,Southeastern Conference
+305093,Fabien,Fabien,Lovett,DT,0.0,,,2024,VALIDATE,75.875,316.0,5.0,26.0,25.5,7.56,4.82,101.0,10.375,34.25,83.75,Florida State Seminoles,FLST,Atlantic Coast Conference
+349905,Nazir,Nazir,Stackhouse,DT,,,,2025,HOLDOUT,75.625,325.0,5.15,27.0,27.5,7.65,4.85,105.0,10.5,32.625,79.25,Georgia Bulldogs,GAUN,Southeastern Conference
+325018,Luke,Luke,Tenuta,OT,0.0,25.0,2022.0,2022,TRAIN,80.0,314.0,5.28,19.0,32.0,7.75,4.77,108.0,10.125,32.875,79.75,Virginia Tech Hokies,VAPI,Atlantic Coast Conference
+353728,Nash,Nash,Jones,OG,,,,2025,HOLDOUT,76.0,320.0,5.32,29.0,30.0,,,113.0,10.5,33.125,82.375,Texas State Bobcats,TXSW,Sun Belt Conference
+337079,Andrew,Andrew,Coker,OT,0.0,,,2024,VALIDATE,78.875,313.0,5.36,24.0,25.5,8.02,5.0,94.0,9.5,33.625,81.0,TCU Horned Frogs,TXCU,Big Twelve Conference
+326470,Aaron,Aaron,Casey,IB,0.0,,,2024,VALIDATE,73.125,230.0,4.69,16.0,34.0,7.09,4.4,117.0,9.625,32.0,79.0,Indiana Hoosiers,INUN,Big Ten Conference
+348768,John,John,Williams,,,,,2025,HOLDOUT,76.125,322.0,5.17,29.0,,7.93,4.72,,11.0,33.875,81.5,Cincinnati Bearcats,OHCI,Big Twelve Conference
+359846,Dominic,Dominic,Lovett,WR,,,,2025,HOLDOUT,70.25,186.0,4.4,,33.5,,4.27,120.0,9.25,31.5,74.875,Georgia Bulldogs,GAUN,Southeastern Conference
+283943,Ben,Ben,Stille,DT,0.0,85.0,2022.0,2022,TRAIN,76.0,300.0,4.98,22.0,32.0,7.45,4.29,116.0,9.5,32.125,79.25,Nebraska Cornhuskers,NEUN,Big Ten Conference
+280351,Parker,Parker,White,,0.0,,,2022,TRAIN,76.125,207.0,,,34.0,,,126.0,9.375,33.5,79.5,South Carolina Gamecocks,SCUN,Southeastern Conference
+328254,Shilo,Shilo,Sanders,DS,,,,2025,HOLDOUT,,,4.56,,,,,113.0,,,,Colorado Buffaloes,COUN,Big Twelve Conference
+361769,Andrew,Andrew,Henry,RB,0.0,,,,OTHER,69.75,198.0,4.57,22.0,37.5,7.5,4.3,125.0,8.625,29.75,72.75,New Mexico Lobos,NMUN,Mountain West Conference
+326204,Nick,Nick,Nash,WR,,,,2025,HOLDOUT,74.125,201.0,4.57,,34.0,7.08,4.37,123.0,8.875,31.375,76.25,San Jose State Spartans,CASJ,Mountain West Conference
+349254,J.J.,Jeremiah,Pegues,DT,,,,2025,HOLDOUT,74.5,305.0,5.15,23.0,27.5,7.77,4.89,,9.25,32.5,79.875,Ole Miss Rebels,MSUN,Southeastern Conference
+351069,Logan,Logan,Lee,DT,0.0,,,2024,VALIDATE,77.125,288.0,5.05,25.0,31.5,7.16,4.37,114.0,10.125,31.25,79.875,Iowa Hawkeyes,IAUN,Big Ten Conference
+278868,Zachary,Zachary,Thomas,OT,0.0,1.0,2022.0,2022,TRAIN,76.875,305.0,4.96,21.0,22.5,7.4,4.65,107.0,10.25,33.875,82.625,San Diego State Aztecs,CASS,Mountain West Conference
+330521,Jack,Jack,Plummer,QB,0.0,,,2024,VALIDATE,76.375,215.0,4.75,,33.0,7.06,4.4,116.0,9.5,32.625,78.375,Louisville Cardinals,KYLO,Atlantic Coast Conference
+349011,Tonka,Tonka,Hemingway,DT,,,,2025,HOLDOUT,74.875,282.0,5.02,,32.0,7.36,4.48,112.0,9.0,33.375,80.25,South Carolina Gamecocks,SCUN,Southeastern Conference
+351261,Joshua,Joshua,Gray,OG,,,,2025,HOLDOUT,76.25,300.0,5.04,18.0,31.0,7.57,4.65,104.0,9.5,32.125,78.75,Oregon State Beavers,ORST,Pacific Twelve Conference
+385329,Deionte,Deionte,Knight,,0.0,,,2022,TRAIN,,,,,,,,,,,,,,
+373841,Gareth,Gareth,Warren,OG,,,,2025,HOLDOUT,77.5,328.0,5.22,19.0,30.0,8.09,4.83,110.0,9.625,33.625,79.0,Lindenwood Lions,MOLW,Big South - Ohio Valley Conference
+351079,Payton,Payton,Thorne,QB,,,,2025,HOLDOUT,73.625,207.0,4.7,,31.0,7.2,4.25,117.0,9.25,31.0,77.0,Auburn Tigers,ALAU,Southeastern Conference
+355296,Elijah,Elijah,Ponder,DE,,,,2025,HOLDOUT,74.5,257.0,,,,,,,10.25,32.5,79.125,Cal Poly Mustangs,CASL,Big Sky Conference
+283344,Myron,Myron,Cunningham,,0.0,,,2022,TRAIN,77.625,322.0,5.38,26.0,29.5,8.5,5.16,98.0,10.5,34.25,81.75,Arkansas Razorbacks,ARUN,Southeastern Conference
+325401,Nolan,Nolan,Cockrill,,0.0,,,,OTHER,74.875,278.0,5.18,32.0,27.0,7.46,4.71,104.0,9.375,31.75,76.125,Army Black Knights,NYWP,American Athletic Conference
+281160,Big Kat,Markaviest,Bryant,,0.0,,,2022,TRAIN,76.0,254.0,4.89,23.0,31.0,8.13,4.99,110.0,10.375,34.125,82.0,UCF Knights,FLCE,Big Twelve Conference
+194670,Jack,Jack,Jones,DS,1.0,472.0,2022.0,2022,TRAIN,71.75,177.0,4.52,11.0,35.0,6.9,4.13,124.0,8.875,31.25,74.0,Arizona State Sun Devils,AZST,Big Twelve Conference
+304761,Alec,Alec,Lindstrom,,0.0,,,2022,TRAIN,75.375,296.0,5.18,25.0,29.0,7.5,4.66,111.0,9.25,32.625,76.0,Boston College Eagles,MABC,Atlantic Coast Conference
+351300,C.J.,Chaddrian,West,DT,,,,2025,HOLDOUT,73.25,316.0,4.95,28.0,33.0,,,,10.0,31.875,79.125,Indiana Hoosiers,INUN,Big Ten Conference
+326564,Mason,Mason,Fairchild,TE,0.0,,,2024,VALIDATE,76.0,249.0,4.9,27.0,31.5,7.19,4.46,116.0,9.75,31.125,77.0,Kansas Jayhawks,KSUN,Big Twelve Conference
+340182,Timothy,Timothy,McKay,OG,,,,2025,HOLDOUT,75.875,311.0,,16.0,30.5,,,,10.125,34.125,80.0,NC State Wolfpack,NCST,Atlantic Coast Conference
+332504,Austin,Austin,Reed,QB,0.0,,,2024,VALIDATE,73.5,221.0,4.82,,,,,,9.875,30.625,72.875,University of West Florida Argonauts,FLWS,Gulf South Conference
+279792,Trestan,Trestan,Ebner,RB,0.0,258.0,2022.0,2022,TRAIN,70.75,209.0,4.43,13.0,30.0,7.16,4.53,115.0,8.5,30.125,72.375,Baylor Bears,TXBA,Big Twelve Conference
+282480,Ja'Sir,Ja'Sir,Taylor,DS,1.0,429.0,2022.0,2022,TRAIN,71.0,188.0,4.47,12.0,37.0,6.84,4.25,125.0,8.625,30.875,74.375,Wake Forest Demon Deacons,NCWF,Atlantic Coast Conference
+300840,Leddie,Leddie,Brown,,0.0,,,2022,TRAIN,71.625,215.0,4.64,18.0,36.5,7.03,4.21,118.0,10.0,31.625,76.375,West Virginia Mountaineers,WVUN,Big Twelve Conference
+361710,Trey,Trey,Wedig,,,,,2025,HOLDOUT,78.625,313.0,5.21,17.0,31.0,7.9,4.9,107.0,10.0,33.5,82.625,Indiana Hoosiers,INUN,Big Ten Conference
+339883,Isaac,Isaac,Rex,TE,0.0,,,2024,VALIDATE,77.375,247.0,4.94,24.0,27.0,7.35,5.0,,9.75,32.0,78.25,BYU Cougars,UTBY,Big Twelve Conference
+305925,Darien,Darien,Butler,IB,0.0,292.0,2022.0,2022,TRAIN,70.375,226.0,,19.0,,7.47,,,9.375,30.125,74.25,Arizona State Sun Devils,AZST,Big Twelve Conference
+305898,Trajan,Trajan,Jeffcoat,DE,0.0,,,2024,VALIDATE,76.0,267.0,4.69,21.0,31.5,7.38,4.52,120.0,10.0,32.875,79.125,Arkansas Razorbacks,ARUN,Southeastern Conference
+305056,Chance,Chance,Campbell,,0.0,,,2022,TRAIN,74.375,232.0,4.57,,39.5,7.19,4.25,127.0,11.0,31.25,74.125,Ole Miss Rebels,MSUN,Southeastern Conference
+305878,Tyquan,Tyquan,Thornton,WR,1.0,526.0,2022.0,2022,TRAIN,74.375,183.0,4.28,,38.5,7.25,4.39,131.0,8.25,33.375,79.375,Baylor Bears,TXBA,Big Twelve Conference
+336893,Anim,Anim,Dankwah,,0.0,,,2024,VALIDATE,79.5,349.0,5.44,24.0,27.5,8.46,5.21,86.0,10.0,35.0,86.25,Howard Bison,DCHO,Mid-Eastern Athletic Conference
+349098,Mike,Michael,Smith,DS,,,,2025,HOLDOUT,73.125,209.0,4.53,15.0,38.0,7.2,4.3,121.0,9.375,32.0,77.25,Eastern Kentucky Colonels,KYEA,United Athletic Conference
+281642,Ryan,Ryan,Stonehouse,,0.0,,,2022,TRAIN,69.5,193.0,,,,,,,9.5,30.0,72.75,Colorado State Rams,COST,Mountain West Conference
+305682,Kyle,Kyle,Philips,WR,0.0,71.0,2022.0,2022,TRAIN,71.25,181.0,4.58,,33.5,6.75,4.09,124.0,8.625,29.625,72.125,UCLA Bruins,CALA,Big Ten Conference
+280574,Derrick,Derrick,Tangelo,,0.0,,,2022,TRAIN,73.875,296.0,4.89,21.0,31.0,,4.87,113.0,,,,Penn State Nittany Lions,PAST,Big Ten Conference
+324822,Matthew,Matthew,Hayball,,0.0,,,2024,VALIDATE,,,,,,,,,,,,Vanderbilt Commodores,TNVA,Southeastern Conference
+316832,X'Zauvea,X'Zauvea,Gadlin,OG,0.0,,,2024,VALIDATE,75.75,326.0,5.5,25.0,24.0,7.74,4.69,96.0,10.375,32.625,81.5,Liberty Flames,VALB,Conference USA
+308045,Charleston,Charleston,Rambo,,0.0,,,2022,TRAIN,72.625,177.0,4.56,,33.5,7.09,4.21,118.0,9.75,32.0,76.5,Miami Hurricanes,FLMI,Atlantic Coast Conference
+356720,Jalen,Jalen,Coker,WR,1.0,461.0,2024.0,2024,VALIDATE,73.3,210.0,4.57,12.0,42.5,,,128.0,9.875,32.875,76.75,Holy Cross Crusaders,MAHC,Patriot League
+386094,Jordan,Jordan,Phillips,DT,,,,2025,HOLDOUT,73.625,313.0,,29.0,31.0,7.65,4.65,108.0,10.0,32.0,81.25,Maryland Terrapins,MDUN,Big Ten Conference
+348081,Ben,Ben,Sauls,,,,,2025,HOLDOUT,69.75,186.0,,,,,,,9.5,29.125,71.25,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+281256,Skylar,Skylar,Thompson,QB,0.0,211.0,2022.0,2022,TRAIN,73.875,217.0,4.91,,31.0,7.0,4.28,112.0,8.625,31.0,74.875,Kansas State Wildcats,KSST,Big Twelve Conference
+325311,Karsen,Karsen,Barnhart,,0.0,,,2024,VALIDATE,76.375,306.0,5.21,22.0,30.0,7.52,4.62,111.0,9.75,33.625,81.375,Michigan Wolverines,MIUN,Big Ten Conference
+372061,Carter,Carter,Runyon,,,,,2025,HOLDOUT,76.625,243.0,4.63,22.0,36.5,7.2,4.3,123.0,10.0,32.875,81.375,Towson Tigers,MDTO,Colonial Athletic Association
+325312,Matt,Matt,Jones,IB,,,,2025,HOLDOUT,74.5,230.0,,,,,,,9.75,32.375,76.5,Baylor Bears,TXBA,Big Twelve Conference
+348606,Tay,Davontavean,Martin,WR,0.0,22.0,2022.0,2022,TRAIN,73.5,184.0,4.57,,36.0,,,117.0,,,,Oklahoma State Cowboys,OKST,Big Twelve Conference
+304899,George,George,Moore,,0.0,,,2022,TRAIN,77.75,312.0,5.25,26.0,24.0,7.6,4.81,98.0,10.625,33.875,81.125,Oregon Ducks,ORUN,Big Ten Conference
+349227,Harrison,Harrison,Mevis,,0.0,,,2024,VALIDATE,71.875,241.0,,,,,,,8.875,30.75,74.375,Missouri Tigers,MOUN,Southeastern Conference
+305339,Xavier,Xavier,Thomas,DE,0.0,231.0,2024.0,2024,VALIDATE,74.25,253.0,4.56,26.0,32.5,,,120.0,9.25,32.5,78.75,Clemson Tigers,SCCL,Atlantic Coast Conference
+330865,Jason,Jason,Johnson,IB,0.0,,,2024,VALIDATE,72.5,228.0,4.65,18.0,29.0,7.38,4.51,112.0,8.75,31.125,75.125,UCF Knights,FLCE,Big Twelve Conference
+360413,Tejhaun,Tejhaun,Palmer,WR,0.0,,,2024,VALIDATE,73.75,210.0,4.45,19.0,35.0,,,122.0,9.875,33.75,78.0,UAB Blazers,ALBI,American Athletic Conference
+325325,Cornelius,Cornelius,Johnson,WR,0.0,,,2024,VALIDATE,74.625,212.0,4.44,13.0,37.5,6.93,4.37,127.0,8.75,31.875,77.25,Michigan Wolverines,MIUN,Big Ten Conference
+300785,Jermaine,Jermaine,Waller,,0.0,,,2022,TRAIN,72.375,180.0,4.68,14.0,35.0,6.97,4.37,122.0,9.0,31.125,73.75,Virginia Tech Hokies,VAPI,Atlantic Coast Conference
+317168,Blake,Blake,Watson,RB,0.0,18.0,2024.0,2024,VALIDATE,69.5,200.0,4.4,,31.5,7.13,4.32,135.0,8.75,29.625,71.875,Memphis Tigers,TNMS,American Athletic Conference
+317480,Jadon,Jadon,Janke,WR,0.0,,,2024,VALIDATE,74.125,212.0,4.53,18.0,33.0,7.15,4.4,122.0,9.0,30.375,73.875,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+300890,Matt,Matt,Henningsen,DT,1.0,422.0,2022.0,2022,TRAIN,75.375,289.0,,22.0,37.5,7.02,4.07,119.0,9.375,33.125,82.125,Wisconsin Badgers,WIUN,Big Ten Conference
+350636,Tip,Tip,Reiman,TE,1.0,639.0,2024.0,2024,VALIDATE,76.875,271.0,4.64,28.0,33.5,7.02,4.26,121.0,10.5,32.875,79.5,Illinois Fighting Illini,ILUN,Big Ten Conference
+300415,Ross,Ross,Reiter,,0.0,,,2022,TRAIN,70.625,237.0,5.33,25.0,28.5,7.56,4.7,106.0,9.375,29.625,72.5,Colorado State Rams,COST,Mountain West Conference
+328257,C.J.,C.J.,Hanson,OG,0.0,32.0,2024.0,2024,VALIDATE,77.0,306.0,5.0,25.0,33.5,7.9,4.71,115.0,9.5,32.625,78.5,Holy Cross Crusaders,MAHC,Patriot League
+325463,Walter,Walter,Rouse,OT,0.0,6.0,2024.0,2024,VALIDATE,77.875,314.0,5.25,,33.0,7.89,4.83,110.0,10.0,35.125,84.0,Oklahoma Sooners,OKUN,Southeastern Conference
+361951,Jackson,Jackson,Meeks,WR,,,,2025,HOLDOUT,73.875,213.0,4.64,15.0,34.5,6.79,4.25,120.0,9.625,32.0,76.75,Syracuse Orange,NYSY,Atlantic Coast Conference
+324892,Damarion,Damarion,Williams,DC,1.0,359.0,2022.0,2022,TRAIN,70.0,183.0,4.53,17.0,34.5,7.03,4.14,111.0,8.75,29.625,73.0,Houston Cougars,TXHO,Big Twelve Conference
+361664,Ja'Corey,Ja'Corey,Brooks,WR,,,,2025,HOLDOUT,73.875,188.0,4.65,12.0,30.0,7.18,4.35,116.0,9.25,31.875,76.625,Louisville Cardinals,KYLO,Atlantic Coast Conference
+347731,Dalton,Dalton,Cooper,OT,,,,2025,HOLDOUT,77.5,326.0,4.99,26.0,28.0,7.9,4.64,108.0,9.75,33.5,80.75,Oklahoma State Cowboys,OKST,Big Twelve Conference
+305122,Obinna,Obinna,Eze,,0.0,,,2022,TRAIN,78.5,328.0,5.29,18.0,27.5,8.01,5.0,104.0,9.875,36.125,86.375,TCU Horned Frogs,TXCU,Big Twelve Conference
+278802,Tanner,Tanner,Conner,WR,0.0,177.0,2022.0,2022,TRAIN,75.0,226.0,4.5,19.0,39.0,7.15,4.41,127.0,9.5,31.875,77.25,Idaho State Bengals,IDST,Big Sky Conference
+362581,Greg,Greg,Penn,IB,0.0,,,,OTHER,72.75,226.0,4.82,21.0,32.5,7.28,4.47,112.0,8.875,30.875,75.125,LSU Tigers,LAST,Southeastern Conference
+361758,Cam,Cameron,Little,,0.0,,,2024,VALIDATE,73.2,172.0,,,,,,,9.25,30.5,73.6,Arkansas Razorbacks,ARUN,Southeastern Conference
+281884,Nate,Nate,Landman,IB,0.0,89.0,2022.0,2022,TRAIN,74.5,234.0,4.86,20.0,36.5,6.88,4.32,119.0,9.125,30.75,76.625,Colorado Buffaloes,COUN,Big Twelve Conference
+279337,Russ,Craig,Yeast,DS,1.0,320.0,2022.0,2022,TRAIN,70.0,192.0,4.58,18.0,37.5,6.82,4.35,119.0,9.0,31.75,79.125,Kansas State Wildcats,KSST,Big Twelve Conference
+282649,Qwynnterrio,Qwynnterrio,Cole,,0.0,,,2022,TRAIN,72.5,203.0,4.78,16.0,35.5,6.92,4.2,120.0,11.0,32.25,74.875,Louisville Cardinals,KYLO,Atlantic Coast Conference
+361650,Andy,Andres,Borregales,,,,,2025,HOLDOUT,71.125,202.0,,,,,,,8.25,29.5,71.5,Miami Hurricanes,FLMI,Atlantic Coast Conference
+312167,Khristian,Khristian,Boyd,DT,0.0,74.0,2024.0,2024,VALIDATE,74.625,325.0,,38.0,28.5,8.1,4.91,98.0,9.5,31.625,77.125,Northern Iowa Panthers,IANO,Missouri Valley Football Conference
+349838,Marques,Marques,Sigle,DS,,,,2025,HOLDOUT,71.0,202.0,4.37,18.0,38.0,,,130.0,9.625,30.875,73.75,Kansas State Wildcats,KSST,Big Twelve Conference
+349308,Tyler,Tyler,Batty,DE,,,,2025,HOLDOUT,77.25,265.0,4.78,27.0,34.0,7.21,4.54,120.0,9.5,33.0,79.125,BYU Cougars,UTBY,Big Twelve Conference
+307223,Jordan,Jordan,Miller,DT,0.0,,,2024,VALIDATE,74.375,304.0,5.16,27.0,28.0,7.82,5.01,108.0,9.75,33.5,80.5,SMU Mustangs,TXMU,Atlantic Coast Conference
+330335,Malik,Malik,Washington,WR,1.0,514.0,2024.0,2024,VALIDATE,68.4,191.0,4.47,19.0,42.5,6.87,4.26,126.0,9.25,30.0,73.0,Virginia Cavaliers,VAUN,Atlantic Coast Conference
+325913,Jowon,Jowon,Briggs,DT,0.0,163.0,2024.0,2024,VALIDATE,73.5,313.0,5.0,39.0,26.0,7.53,4.71,104.0,9.875,31.75,78.75,Cincinnati Bearcats,OHCI,Big Twelve Conference
+304799,Brandon,Brandon,Sebastian,,0.0,,,2022,TRAIN,72.125,182.0,4.6,10.0,35.0,7.12,4.37,124.0,8.5,31.75,75.75,Boston College Eagles,MABC,Atlantic Coast Conference
+259707,Jean,Jean,Delance,,0.0,,,2022,TRAIN,76.25,303.0,5.23,21.0,28.5,,4.62,109.0,10.125,36.5,86.5,Florida Gators,FLUN,Southeastern Conference
+367815,Corey,Corey,Kiner,RB,,,,2025,HOLDOUT,68.75,208.0,4.57,19.0,,,4.44,,7.75,30.375,75.875,Cincinnati Bearcats,OHCI,Big Twelve Conference
+328191,Jamree,Jamree,Kromah,DT,0.0,,,2024,VALIDATE,75.5,274.0,4.77,,31.0,7.34,4.63,120.0,9.75,34.5,81.0,James Madison Dukes,VAJM,Sun Belt Conference
+316873,Garret,Garret,Greenfield,,0.0,,,2024,VALIDATE,77.75,313.0,5.22,,38.5,7.76,4.85,113.0,10.0,34.125,84.0,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+350805,Nohl,Nohl,Williams,DC,,,,2025,HOLDOUT,72.25,200.0,4.5,19.0,33.5,6.97,4.25,120.0,9.125,31.25,74.875,California Golden Bears,CAUN,Atlantic Coast Conference
+330695,Isas,Isas,Waxter,DC,,,,2025,HOLDOUT,73.375,205.0,4.5,,35.0,7.0,4.18,125.0,9.5,31.875,78.25,Villanova Wildcats,PAVI,Colonial Athletic Association
+350674,Antwaun,Antwuan,Powell-Ryland,DE,,,,2025,HOLDOUT,74.375,264.0,4.69,,38.0,,,124.0,9.0,31.5,76.625,Virginia Tech Hokies,VAPI,Atlantic Coast Conference
+325952,Jaylen,Jaylen,Key,DS,0.0,,,2024,VALIDATE,72.875,206.0,4.6,,32.0,7.2,4.09,130.0,9.625,32.375,78.125,Alabama Crimson Tide,ALUN,Southeastern Conference
+325538,Joshua,Joshua,Cephus,WR,0.0,6.0,2024.0,2024,VALIDATE,74.125,193.0,4.58,,32.5,7.12,4.37,122.0,9.125,31.625,76.0,UTSA Roadrunners,TXSN,American Athletic Conference
+325515,Taulia,Taulia,Tagovailoa,QB,0.0,,,,OTHER,70.75,185.0,,,,,,,9.5,30.75,74.125,Maryland Terrapins,MDUN,Big Ten Conference
+280246,Nephi,Nephi,Sewell,IB,0.0,54.0,2022.0,2022,TRAIN,71.5,224.0,4.67,24.0,32.0,7.01,4.33,120.0,8.5,29.5,71.0,Utah Utes,UTUN,Big Twelve Conference
+351068,Luke,Luke,Lachey,TE,,,,2025,HOLDOUT,76.625,250.0,4.85,,35.0,7.18,4.33,120.0,10.0,32.5,79.25,Iowa Hawkeyes,IAUN,Big Ten Conference
+305411,Stanley,Stanley,Berryhill,WR,0.0,40.0,2022.0,2022,TRAIN,69.25,182.0,4.46,14.0,37.0,7.25,4.41,122.0,8.25,30.25,72.0,Arizona Wildcats,AZUN,Big Twelve Conference
+300724,Keaontay,Keaontay,Ingram,RB,0.0,150.0,2022.0,2022,TRAIN,71.625,220.0,4.53,23.0,33.0,7.19,4.44,122.0,8.875,31.375,76.0,USC Trojans,CASC,Big Ten Conference
+305518,Carson,Carson,Wells,,0.0,,,2022,TRAIN,74.75,241.0,4.56,16.0,35.0,7.11,4.51,117.0,9.5,32.625,79.5,Colorado Buffaloes,COUN,Big Twelve Conference
+350669,Jakob,Jakob,Robinson,DC,,,,2025,HOLDOUT,70.25,181.0,4.39,,38.5,7.01,4.38,125.0,9.0,30.25,74.75,BYU Cougars,UTBY,Big Twelve Conference
+368279,Joe,Joe,Huber,OG,,,,2025,HOLDOUT,77.0,303.0,5.2,26.0,28.0,7.69,4.79,106.0,9.5,32.5,79.125,Wisconsin Badgers,WIUN,Big Ten Conference
+301317,Donovan,Donovan,Jennings,,0.0,,,2024,VALIDATE,76.125,323.0,5.02,28.0,28.0,7.6,4.7,,9.25,33.0,81.0,South Florida Bulls,FLSO,American Athletic Conference
+347705,Frank,Frank,Gore,RB,0.0,,,2024,VALIDATE,68.0,198.0,4.69,18.0,29.0,,,111.0,8.625,29.0,70.75,Southern Miss Golden Eagles,MSSO,Sun Belt Conference
+361898,Ro,Roterius,Torrence,DC,0.0,,,2024,VALIDATE,75.125,206.0,4.69,12.0,32.5,7.41,4.61,109.0,8.5,33.5,81.0,Arizona State Sun Devils,AZST,Big Twelve Conference
+304739,Tyrese,Tyrese,Robinson,,0.0,,,2022,TRAIN,75.125,319.0,5.16,,22.5,8.18,5.09,100.0,9.625,33.125,78.75,Oklahoma Sooners,OKUN,Southeastern Conference
+360150,Francisco,Francisco,Mauigoa,IB,,,,2025,HOLDOUT,74.125,234.0,4.6,21.0,37.0,7.15,4.24,121.0,10.125,31.75,76.75,Miami Hurricanes,FLMI,Atlantic Coast Conference
+305707,Dallas,Dallas,Gant,IB,0.0,26.0,2024.0,2024,VALIDATE,74.5,228.0,4.68,17.0,35.0,7.43,4.5,126.0,10.0,33.25,80.625,Toledo Rockets,OHTO,Mid-American Conference
+271750,Kellen,Kellen,Diesch,,0.0,,,2022,TRAIN,79.125,303.0,4.89,25.0,32.5,7.77,4.43,110.0,9.375,32.375,79.375,Arizona State Sun Devils,AZST,Big Twelve Conference
+287519,Sam,Sam,Webb,DC,1.0,399.0,2022.0,2022,TRAIN,72.5,201.0,4.53,14.0,42.5,6.94,4.18,136.0,9.25,32.125,78.5,Missouri Western Griffons,MOWE,Mid-America Intercollegiate Athletic Association
+349235,Rivaldo,Rivaldo,Fairweather,TE,,,,2025,HOLDOUT,75.375,242.0,4.72,17.0,30.0,7.1,4.4,110.0,9.625,34.25,83.625,Auburn Tigers,ALAU,Southeastern Conference
+349877,Justin,Justin,Rogers,DT,0.0,,,2024,VALIDATE,74.75,322.0,5.53,21.0,26.0,8.17,4.87,101.0,9.75,32.75,79.25,Auburn Tigers,ALAU,Southeastern Conference
+351743,Brady,Brady,Cook,QB,,,,2025,HOLDOUT,74.0,214.0,4.59,,37.0,7.01,4.17,128.0,9.375,32.25,78.0,Missouri Tigers,MOUN,Southeastern Conference
+328197,Khalid,Khalid,Duke,DE,0.0,22.0,2024.0,2024,VALIDATE,75.5,253.0,4.79,21.0,34.0,7.41,4.6,117.0,9.25,32.75,77.875,Kansas State Wildcats,KSST,Big Twelve Conference
+283383,Jeff,Jeffrey,Gunter,DE,0.0,115.0,2022.0,2022,TRAIN,76.375,256.0,4.7,30.0,35.5,7.21,4.35,122.0,9.25,33.0,79.875,Coastal Carolina Chanticleers,SCCC,Sun Belt Conference
+280678,D.Q.,D.Q.,Thomas,,0.0,,,2022,TRAIN,73.625,226.0,4.67,24.0,35.0,7.15,4.27,121.0,10.0,32.75,79.625,Middle Tennessee Blue Raiders,TNMI,Conference USA
+328261,Max,Max,Brosmer,QB,,,,2025,HOLDOUT,73.75,218.0,4.79,,,,,,9.5,32.0,75.75,Minnesota Golden Gophers,MNUN,Big Ten Conference
+283055,Luke,Luke,Wattenberg,OG,0.0,108.0,2022.0,2022,TRAIN,76.0,306.0,5.2,,29.5,7.45,4.57,113.0,9.375,34.125,82.125,Washington Huskies,WAUN,Big Ten Conference
+195223,D'Eriq,D'Eriq,King,,0.0,,,2022,TRAIN,68.75,197.0,4.6,,,7.26,,,9.25,29.25,72.25,Miami Hurricanes,FLMI,Atlantic Coast Conference
+377127,Aiden,Aiden,Williams,,,,,2025,HOLDOUT,,,,,,,,,,,,Minnesota Duluth Bulldogs,MNDU,Northern Sun Intercollegiate Conference
+327751,Tahj,Tahj,Washington,WR,0.0,,,2024,VALIDATE,69.875,174.0,4.52,,34.5,6.84,4.22,123.0,8.5,29.125,70.375,USC Trojans,CASC,Big Ten Conference
+310208,Pierre,Pierre,Strong,RB,0.0,194.0,2022.0,2022,TRAIN,71.375,207.0,4.37,16.0,38.0,6.95,4.25,119.0,9.25,31.875,76.5,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+325034,Tommy,Tommy,Heatherly,,0.0,,,2022,TRAIN,71.5,205.0,,,,,,,8.625,30.5,74.0,Florida International Panthers,FLIN,Conference USA
+310211,Mason,Mason,McCormick,OG,1.0,1008.0,2024.0,2024,VALIDATE,76.125,309.0,5.08,32.0,35.5,7.59,4.45,117.0,10.0,33.75,82.0,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+325391,Renardo,Renardo,Green,DC,1.0,751.0,2024.0,2024,VALIDATE,72.0,191.0,4.49,,37.5,,4.28,130.0,8.75,30.625,74.0,Florida State Seminoles,FLST,Atlantic Coast Conference
+315830,Beanie,Shannon,Bishop,DC,1.0,724.0,2024.0,2024,VALIDATE,69.125,180.0,4.39,,33.5,7.05,4.15,120.0,9.375,30.75,71.125,West Virginia Mountaineers,WVUN,Big Twelve Conference
+328303,Jalen,Jalen,Sundell,,0.0,,,2024,VALIDATE,77.125,301.0,5.18,26.0,30.5,7.63,4.58,105.0,9.5,33.125,78.125,North Dakota State Bison,NDST,Missouri Valley Football Conference
+350269,Curtis,Curtis,Jacobs,IB,0.0,159.0,2024.0,2024,VALIDATE,73.125,243.0,4.58,18.0,35.0,7.22,4.43,129.0,10.25,31.5,77.75,Penn State Nittany Lions,PAST,Big Ten Conference
+279277,Jack,Jack,Coan,,0.0,,,2022,TRAIN,75.125,217.0,4.9,,33.0,6.95,4.39,115.0,9.75,31.375,75.0,Notre Dame Fighting Irish,INND,Independent
+304268,Percy,Percy,Butler,DS,1.0,407.0,2022.0,2022,TRAIN,72.25,194.0,4.36,13.0,35.0,6.9,4.38,123.0,9.125,31.625,76.625,Louisiana Ragin' Cajuns,LASW,Sun Belt Conference
+326123,Joe,Joseph,Shimko,,0.0,,,2024,VALIDATE,,,,,,,,,,,,NC State Wolfpack,NCST,Atlantic Coast Conference
+260934,Chase,Chase,Lucas,DC,0.0,81.0,2022.0,2022,TRAIN,71.25,180.0,4.48,12.0,39.0,6.78,4.16,128.0,9.25,31.875,74.5,Arizona State Sun Devils,AZST,Big Twelve Conference
+281183,Darrell,Darrell,Baker,DC,0.0,31.0,2022.0,2022,TRAIN,72.875,190.0,4.43,11.0,41.5,7.07,4.25,136.0,8.75,32.0,77.875,Georgia Southern Eagles,GASO,Sun Belt Conference
+361555,Jamon,Jamon,Johnson,IB,,,,2025,HOLDOUT,72.75,236.0,4.6,16.0,37.5,,,126.0,9.75,31.625,78.375,Kentucky Wildcats,KYUN,Southeastern Conference
+362952,Donovan,Donovan,McMillon,DS,,,,2025,HOLDOUT,73.625,203.0,4.46,21.0,35.0,6.98,4.13,125.0,9.5,31.75,75.0,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+279557,Billy,Billy,Taylor,,0.0,,,,OTHER,72.375,235.0,4.84,28.0,30.5,7.13,4.35,111.0,8.875,31.0,,Rutgers Scarlet Knights,NJRU,Big Ten Conference
+314829,McCallan,McCallan,Castles,TE,0.0,,,2024,VALIDATE,76.375,244.0,4.67,16.0,37.5,7.21,4.36,126.0,9.875,33.0,79.125,Tennessee Volunteers,TNUN,Southeastern Conference
+279920,Ali,Ali,Fayad,,0.0,,,2022,TRAIN,73.625,248.0,4.89,28.0,32.5,7.31,4.57,112.0,9.875,32.0,77.5,Western Michigan Broncos,MIWE,Mid-American Conference
+364245,Shamari,Shamari,Simmons,DC,,,,2025,HOLDOUT,71.75,197.0,4.69,12.0,36.5,7.44,4.43,123.0,8.75,30.25,75.125,Arizona State Sun Devils,AZST,Big Twelve Conference
+349015,Kai,Kai,Kroeger,,,,,2025,HOLDOUT,75.375,213.0,,,,,,,9.25,32.0,76.0,South Carolina Gamecocks,SCUN,Southeastern Conference
+362073,Carson,Carson,Steele,RB,1.0,337.0,2024.0,2024,VALIDATE,72.625,228.0,4.75,28.0,37.5,7.07,4.36,116.0,9.75,30.0,73.625,UCLA Bruins,CALA,Big Ten Conference
+306122,Jaivon,Jaivon,Heiligh,,0.0,,,2022,TRAIN,72.375,202.0,4.63,14.0,36.0,7.19,4.46,119.0,9.25,32.0,76.375,Coastal Carolina Chanticleers,SCCC,Sun Belt Conference
+305860,Kalon,Kalon,Barnes,DC,0.0,9.0,2022.0,2022,TRAIN,71.5,183.0,4.23,6.0,40.0,7.44,4.58,133.0,9.875,31.75,76.75,Baylor Bears,TXBA,Big Twelve Conference
+336471,Isaiah,Isaiah,Williams,WR,0.0,56.0,2024.0,2024,VALIDATE,68.0,179.0,4.57,17.0,36.0,6.78,4.13,128.0,9.125,30.1,72.8,Illinois Fighting Illini,ILUN,Big Ten Conference
+348494,Jordan,Jordan,Williams,OT,,,,2025,HOLDOUT,77.25,318.0,,23.0,32.0,,,109.0,10.0,34.0,81.75,Georgia Tech Yellow Jackets,GATC,Atlantic Coast Conference
+316470,Gerrit,Gerrit,Prince,,0.0,,,2022,TRAIN,76.5,241.0,4.77,14.0,32.5,7.25,4.46,114.0,9.625,34.0,79.375,UAB Blazers,ALBI,American Athletic Conference
+326147,Zach,Zach,Heins,TE,0.0,,,2024,VALIDATE,78.125,259.0,5.0,,29.0,7.56,4.52,108.0,9.875,32.875,79.25,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+300802,Zach,Zach,Tom,OT,1.0,489.0,2022.0,2022,TRAIN,76.25,304.0,4.94,,33.0,7.32,4.47,118.0,10.375,33.25,80.375,Wake Forest Demon Deacons,NCWF,Atlantic Coast Conference
+340242,Isaiah,Isaiah,Neyor,WR,,,,2025,HOLDOUT,76.0,219.0,4.4,,38.0,7.0,4.27,133.0,9.875,34.5,83.5,Nebraska Cornhuskers,NEUN,Big Ten Conference
+305931,D.J.,D.J.,Davidson,DT,0.0,86.0,2022.0,2022,TRAIN,72.625,328.0,5.22,23.0,28.5,7.6,4.71,95.0,10.125,33.0,82.875,Arizona State Sun Devils,AZST,Big Twelve Conference
+327725,Doug,Doug,Nester,OT,0.0,,,2024,VALIDATE,78.75,308.0,5.31,19.0,28.0,8.12,4.91,105.0,9.75,32.75,81.125,West Virginia Mountaineers,WVUN,Big Twelve Conference
+304482,Jelani,Jelani,Woods,TE,1.0,356.0,2022.0,2022,TRAIN,79.125,252.0,4.61,24.0,37.5,6.95,4.33,129.0,9.5,34.5,82.75,Virginia Cavaliers,VAUN,Atlantic Coast Conference
+363400,Ethan,Louis,Robinson,DC,,,,2025,HOLDOUT,70.625,195.0,4.55,10.0,42.0,6.94,4.39,127.0,9.375,31.0,74.375,Minnesota Golden Gophers,MNUN,Big Ten Conference
+367710,Maema,Maema,Njongmeta,IB,1.0,402.0,2024.0,2024,VALIDATE,71.75,228.0,4.78,15.0,34.5,7.32,4.61,116.0,9.5,32.125,76.125,Wisconsin Badgers,WIUN,Big Ten Conference
+306298,Solomon,Solomon,Byrd,DE,0.0,21.0,2024.0,2024,VALIDATE,75.0,251.0,5.01,18.0,32.0,7.52,4.59,114.0,9.875,33.5,80.625,USC Trojans,CASC,Big Ten Conference
+280676,Reed,Reed,Blankenship,DS,1.0,380.0,2022.0,2022,TRAIN,72.75,203.0,4.55,15.0,33.5,7.09,4.22,121.0,9.375,31.625,76.25,Middle Tennessee Blue Raiders,TNMI,Conference USA
+327944,Mohamed,Mohamed,Kamara,DE,0.0,56.0,2024.0,2024,VALIDATE,73.5,249.0,4.57,23.0,34.5,7.34,4.49,123.0,8.625,32.375,78.625,Colorado State Rams,COST,Mountain West Conference
+368430,Johnny,Johnny,Walker,DE,,,,2025,HOLDOUT,74.625,249.0,4.82,21.0,32.0,7.69,4.58,120.0,9.875,32.875,79.5,Missouri Tigers,MOUN,Southeastern Conference
+350683,Brandon,Brandon,Crenshaw-Dickson,OT,,,,2025,HOLDOUT,79.125,315.0,5.33,15.0,24.5,7.72,4.8,96.0,10.375,34.75,84.125,Florida Gators,FLUN,Southeastern Conference
+348680,Corey,Corey,Thornton,DC,,,,2025,HOLDOUT,72.5,193.0,4.62,9.0,32.5,7.21,4.29,122.0,9.375,32.5,79.125,Louisville Cardinals,KYLO,Atlantic Coast Conference
+305363,Blaise,Blaise,Andries,,0.0,,,2022,TRAIN,78.25,311.0,5.1,,30.5,7.84,4.68,106.0,9.875,34.0,81.0,Minnesota Golden Gophers,MNUN,Big Ten Conference
+354742,Luke,Luke,Newman,OG,,,,2025,HOLDOUT,75.5,308.0,5.08,29.0,35.0,7.7,4.58,110.0,9.25,31.0,76.25,Michigan State Spartans,MIST,Big Ten Conference
+448335,Jacory,Jacory,Croskey-Merritt,RB,,,,2025,HOLDOUT,70.25,206.0,4.45,17.0,41.5,7.28,4.44,124.0,9.0,31.75,77.125,Arizona Wildcats,AZUN,Big Twelve Conference
+280844,Cordell,Cordell,Volson,OT,1.0,1181.0,2022.0,2022,TRAIN,78.125,315.0,5.27,25.0,25.0,8.31,4.93,104.0,10.5,33.875,81.125,North Dakota State Bison,NDST,Missouri Valley Football Conference
+350438,Garnett,Garnett,Hollis,DC,,,,2025,HOLDOUT,72.375,199.0,4.5,11.0,36.5,,4.3,125.0,8.375,31.75,76.25,West Virginia Mountaineers,WVUN,Big Twelve Conference
+348755,Deshawn,Deshawn,Pace,IB,0.0,,,,OTHER,72.875,212.0,4.55,17.0,32.5,7.19,4.47,117.0,9.875,30.75,72.75,UCF Knights,FLCE,Big Twelve Conference
+336489,Jackson,Jackson,Mitchell,IB,0.0,,,2024,VALIDATE,73.375,225.0,4.83,17.0,34.0,7.36,4.22,113.0,9.5,30.5,76.0,UConn Huskies,CTUN,Independent
+350170,Gus,Gus,Hartwig,OC,,,,2025,HOLDOUT,77.25,309.0,5.27,18.0,29.5,7.77,4.92,103.0,9.875,32.875,79.5,Purdue Boilermakers,INPU,Big Ten Conference
+362249,Drew,Andrew,Kendall,OC,,,,2025,HOLDOUT,76.0,306.0,5.05,20.0,30.5,7.56,4.51,105.0,9.375,32.25,78.0,Boston College Eagles,MABC,Atlantic Coast Conference
+282781,Matthew,Matthew,Butler,DT,0.0,63.0,2022.0,2022,TRAIN,75.875,298.0,5.0,17.0,34.0,7.91,4.9,110.0,9.25,33.5,81.625,Tennessee Volunteers,TNUN,Southeastern Conference
+338552,Daijahn,Daijahn,Anthony,DS,0.0,180.0,2024.0,2024,VALIDATE,72.0,194.0,4.53,10.0,37.0,6.89,4.19,120.0,9.0,31.875,76.375,Ole Miss Rebels,MSUN,Southeastern Conference
+308112,Tyrone,Tyrone,Tracy,RB,1.0,673.0,2024.0,2024,VALIDATE,71.25,209.0,4.48,20.0,40.0,6.81,4.06,124.0,9.0,31.125,76.75,Purdue Boilermakers,INPU,Big Ten Conference
+332464,D'Anthony,D'Anthony,Bell,DS,1.0,321.0,2022.0,2022,TRAIN,72.5,211.0,4.47,18.0,36.0,6.94,4.27,129.0,9.0,32.125,75.0,University of West Florida Argonauts,FLWS,Gulf South Conference
+348245,Tahj,Tahj,Brooks,RB,,,,2025,HOLDOUT,69.375,220.0,4.52,16.0,35.0,6.9,4.06,120.0,9.375,30.75,75.125,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+317794,Deshaun,Deshaun,Fenwick,RB,0.0,,,2024,VALIDATE,72.875,223.0,4.75,19.0,32.5,7.34,4.47,116.0,9.75,31.125,76.25,Oregon State Beavers,ORST,Pacific Twelve Conference
+325753,Bub,Jerrod,Means,WR,0.0,160.0,2024.0,2024,VALIDATE,73.25,227.0,4.43,19.0,39.5,,4.4,122.0,10.25,32.875,79.125,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+305067,Juanyeh,Juanyeh,Thomas,,0.0,,,2022,TRAIN,72.75,213.0,4.55,17.0,34.0,7.33,4.18,122.0,9.625,32.375,78.875,Georgia Tech Yellow Jackets,GATC,Atlantic Coast Conference
+348176,Myles,Myles,Murphy,DT,0.0,,,2024,VALIDATE,76.0,305.0,5.2,20.0,29.0,,4.53,107.0,9.5,33.75,80.25,North Carolina Tar Heels,NCUN,Atlantic Coast Conference
+326448,K.T.,Kaitori,Leveston,OG,0.0,,,2024,VALIDATE,76.0,330.0,5.38,25.0,27.5,7.9,4.85,108.0,10.125,34.375,83.25,Kansas State Wildcats,KSST,Big Twelve Conference
+304601,James,James,Houston,IB,0.0,211.0,2022.0,2022,TRAIN,72.25,244.0,4.74,22.0,39.0,7.41,4.48,125.0,9.0,34.25,82.0,Jackson State Tigers,MSJA,Southwestern Athletic Conference
+327784,Steele,Donovan,Chambers,IB,0.0,,,2024,VALIDATE,72.875,229.0,4.75,19.0,33.5,7.1,4.3,115.0,9.125,30.5,73.75,Ohio State Buckeyes,OHST,Big Ten Conference
+325000,Levelle,Levelle,Bailey,IB,0.0,152.0,2024.0,2024,VALIDATE,73.625,227.0,4.7,16.0,31.5,7.23,4.36,113.0,10.0,32.0,74.375,Fresno State Bulldogs,CAFR,Mountain West Conference
+360774,Konata,Konata,Mumpfield,WR,,,,2025,HOLDOUT,71.25,187.0,4.59,,36.0,6.77,4.19,124.0,8.5,29.875,74.25,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+305335,Kyler,Kyler,McMichael,,0.0,,,2022,TRAIN,72.125,201.0,4.49,14.0,32.0,6.94,4.37,114.0,9.25,31.0,74.5,North Carolina Tar Heels,NCUN,Atlantic Coast Conference
+353353,Myles,Myles,Harden,DC,0.0,102.0,2024.0,2024,VALIDATE,71.25,194.0,4.5,13.0,35.5,6.88,3.98,118.0,9.375,29.75,74.375,South Dakota Coyotes,SDVE,Missouri Valley Football Conference
+300511,Dallin,Dallin,Holker,TE,0.0,104.0,2024.0,2024,VALIDATE,75.25,234.0,4.77,15.0,32.5,7.01,4.47,122.0,10.125,33.375,78.625,Colorado State Rams,COST,Mountain West Conference
+280328,Emeka,Chukwuemeka,Emezie,,0.0,,,2022,TRAIN,74.375,210.0,4.82,18.0,29.0,6.87,4.31,110.0,9.0,32.75,76.875,NC State Wolfpack,NCST,Atlantic Coast Conference
+349628,Evan,Evan,Anderson,DT,1.0,324.0,2024.0,2024,VALIDATE,73.125,320.0,5.2,31.0,30.0,8.2,4.99,99.0,9.25,32.375,78.5,Florida Atlantic Owls,FLAT,American Athletic Conference
+327296,Tylan,Tylan,Grable,OT,0.0,96.0,2024.0,2024,VALIDATE,77.375,308.0,4.95,,36.5,,,117.0,10.375,33.625,80.25,UCF Knights,FLCE,Big Twelve Conference
+330293,Matt,Matthew,Lee,OC,0.0,113.0,2024.0,2024,VALIDATE,75.75,302.0,5.03,25.0,31.0,7.97,4.69,111.0,9.0,32.25,78.625,Miami Hurricanes,FLMI,Atlantic Coast Conference
+282443,Ty,Ty,Chandler,RB,0.0,51.0,2022.0,2022,TRAIN,71.25,203.0,4.38,15.0,31.0,7.4,4.41,121.0,9.0,32.125,75.625,North Carolina Tar Heels,NCUN,Atlantic Coast Conference
+347975,Ryan,Ryan,Rehkow,,0.0,,,2024,VALIDATE,76.375,235.0,,,,,,,9.0,30.75,76.0,BYU Cougars,UTBY,Big Twelve Conference
+350458,Glendon,Glendon,Miller,DS,,,,2025,HOLDOUT,74.875,207.0,4.44,15.0,38.0,7.09,4.25,118.0,8.375,32.25,78.0,Maryland Terrapins,MDUN,Big Ten Conference
+337048,Devin,Devin,Leary,QB,0.0,,,2024,VALIDATE,73.0,216.0,,,,,,,9.625,31.25,74.0,Kentucky Wildcats,KYUN,Southeastern Conference
+348709,Christian,Christian,Mahogany,OG,0.0,116.0,2024.0,2024,VALIDATE,75.375,316.0,5.13,,32.5,7.81,4.53,109.0,10.5,33.5,81.62,Boston College Eagles,MABC,Atlantic Coast Conference
+379167,Gerad,Gerad,Christian-Lichtenhan,,,,,2025,HOLDOUT,80.25,315.0,5.35,19.0,28.0,7.87,5.08,109.0,10.0,35.25,85.375,Oregon State Beavers,ORST,Pacific Twelve Conference
+349825,Cam,Camden,Miller,QB,,,,2025,HOLDOUT,72.875,215.0,,,,,,,9.625,30.125,73.125,North Dakota State Bison,NDST,Missouri Valley Football Conference
+327738,Brent,Brent,Matiscik,,,,,2025,HOLDOUT,72.625,230.0,5.1,17.0,,,,,8.75,30.375,72.875,TCU Horned Frogs,TXCU,Big Twelve Conference
+304444,Chigozie,Chigozie,Anusiem,DC,0.0,13.0,2024.0,2024,VALIDATE,73.125,200.0,4.39,14.0,37.5,7.06,4.42,124.0,8.625,32.25,78.875,Colorado State Rams,COST,Mountain West Conference
+365112,Tre,Tre,Stewart,RB,,,,2025,HOLDOUT,69.375,192.0,4.5,12.0,33.0,7.33,4.45,114.0,9.625,30.375,73.125,Jacksonville State Gamecocks,ALJA,Conference USA
+350512,Jalin,Jalin,Conyers,,,,,2025,HOLDOUT,75.375,261.0,4.74,,35.5,6.94,4.27,121.0,9.75,33.25,80.0,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+350479,Tarheeb,Tarheeb,Still,DC,1.0,881.0,2024.0,2024,VALIDATE,71.625,188.0,4.49,,38.0,,4.19,120.0,9.0,30.0,73.5,Maryland Terrapins,MDUN,Big Ten Conference
+314613,Jaxon,Jaxon,Janke,WR,0.0,,,2024,VALIDATE,74.375,214.0,4.58,15.0,38.0,7.35,4.48,123.0,8.875,30.5,75.875,South Dakota State Jackrabbits,SDST,Missouri Valley Football Conference
+330388,Anthony,Anthony,Gould,WR,0.0,87.0,2024.0,2024,VALIDATE,68.375,180.0,4.39,,39.5,6.94,4.17,129.0,8.75,29.625,70.0,Oregon State Beavers,ORST,Pacific Twelve Conference
+304478,Zander,Alexander,Horvath,FB,1.0,367.0,2022.0,2022,TRAIN,74.125,228.0,4.61,31.0,35.5,6.75,4.25,123.0,8.75,32.0,76.25,Purdue Boilermakers,INPU,Big Ten Conference
+352239,Nash,Nash,Hutmacher,DT,,,,2025,HOLDOUT,75.5,312.0,5.2,26.0,29.5,7.53,4.77,111.0,9.5,31.75,76.0,Nebraska Cornhuskers,NEUN,Big Ten Conference
+283816,David,David,Anenih,,0.0,,,2022,TRAIN,74.0,245.0,4.74,25.0,36.5,,4.5,123.0,9.5,34.375,83.125,Houston Cougars,TXHO,Big Twelve Conference
+325932,Joshua,Joshua,Simon,TE,,,,2025,HOLDOUT,76.125,247.0,4.65,,38.0,7.22,4.4,124.0,10.25,33.875,83.25,South Carolina Gamecocks,SCUN,Southeastern Conference
+353565,Marcus,Marcus,Harris,DC,,,,2025,HOLDOUT,70.75,188.0,4.38,,36.5,7.13,4.25,120.0,8.75,30.25,74.375,California Golden Bears,CAUN,Atlantic Coast Conference
+348216,R.J.,R.J.,Mickens,DS,,,,2025,HOLDOUT,72.0,199.0,4.49,17.0,41.5,,,121.0,8.875,32.0,78.25,Clemson Tigers,SCCL,Atlantic Coast Conference
+281628,Ty,Ty,Fryfogle,,0.0,,,2022,TRAIN,73.125,209.0,4.53,13.0,38.0,7.15,4.47,119.0,9.75,30.875,74.625,Indiana Hoosiers,INUN,Big Ten Conference
+325170,Tyler,Tyler,Owens,DS,0.0,243.0,2024.0,2024,VALIDATE,74.5,213.0,,,41.0,,,146.0,9.125,33.25,79.75,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+280085,Myron,Myron,Tagovailoa-Amosa,,0.0,,,2022,TRAIN,74.375,270.0,4.81,,29.5,7.29,4.7,115.0,9.5,33.0,79.5,Notre Dame Fighting Irish,INND,Independent
+305227,Eyabi,Eyabi,Okie-Anoma,DE,0.0,,,,OTHER,76.375,262.0,,,,,,,9.625,33.0,79.25,Charlotte 49ers,NCCR,American Athletic Conference
+325454,Jarrian,Jarrian,Jones,DC,1.0,812.0,2024.0,2024,VALIDATE,72.25,192.0,4.38,,39.5,,4.3,129.0,8.25,30.0,73.75,Florida State Seminoles,FLST,Atlantic Coast Conference
+351025,Luke,Luke,Elzinga,,0.0,,,,OTHER,76.375,222.0,,,,,,,8.875,33.5,78.5,Oklahoma Sooners,OKUN,Southeastern Conference
+311473,Jack,Jack,Sanborn,IB,1.0,483.0,2022.0,2022,TRAIN,73.5,239.0,4.73,20.0,34.5,6.81,4.05,114.0,9.625,30.5,74.125,Wisconsin Badgers,WIUN,Big Ten Conference
+360280,Josh,Josh,Wojciechowicz,,0.0,,,,OTHER,74.0,240.0,5.01,21.0,31.5,7.83,4.5,112.0,,30.75,75.0,Colorado School of Mines Orediggers,COMI,Rocky Mountain Athletic Conference
+280117,DaMarcus,DaMarcus,Fields,DS,0.0,26.0,2022.0,2022,TRAIN,71.625,192.0,4.48,11.0,37.0,6.95,4.29,119.0,9.125,31.25,75.375,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+282108,Devin,Devin,Cochran,,0.0,,,2022,TRAIN,79.125,306.0,5.1,23.0,30.0,7.64,4.71,112.0,10.25,34.375,86.25,Georgia Tech Yellow Jackets,GATC,Atlantic Coast Conference
+414508,Esa,Christopher,Pole,,,,,2025,HOLDOUT,77.25,323.0,5.29,23.0,29.0,8.03,4.72,100.0,9.875,33.625,81.0,Washington State Cougars,WAST,Pacific Twelve Conference
+341036,Kain,Kain,Medrano,IB,,,,2025,HOLDOUT,74.875,228.0,4.46,,38.0,6.96,4.26,125.0,9.0,32.625,77.125,UCLA Bruins,CALA,Big Ten Conference
+349064,Jack,John,Conley,OG,,,,2025,HOLDOUT,78.75,330.0,5.3,,28.0,7.91,4.89,102.0,9.875,33.125,81.875,Boston College Eagles,MABC,Atlantic Coast Conference
+350535,Bryce,Bryce,Cabeldue,OT,,,,2025,HOLDOUT,76.5,308.0,4.95,30.0,32.0,7.71,4.59,114.0,9.5,33.25,79.375,Kansas Jayhawks,KSUN,Big Twelve Conference
+285512,Calvin,Calvin,Turner,,0.0,,,2022,TRAIN,71.375,197.0,4.5,19.0,38.5,7.14,4.4,123.0,9.375,30.375,73.25,Hawaii Rainbow Warriors,HIUN,Mountain West Conference
+264587,Brayden,Brayden,Thomas,DE,0.0,18.0,2022.0,2022,TRAIN,75.0,258.0,4.92,25.0,32.0,6.9,4.4,111.0,9.75,32.0,78.0,North Dakota State Bison,NDST,Missouri Valley Football Conference
+350319,Trente,Trente,Jones,OG,0.0,,,2024,VALIDATE,76.0,310.0,5.17,22.0,26.0,7.78,4.87,109.0,10.125,33.0,80.0,Michigan Wolverines,MIUN,Big Ten Conference
+286524,Dareke,Dareke,Young,WR,1.0,318.0,2022.0,2022,TRAIN,74.0,224.0,4.45,22.0,37.0,6.88,4.16,135.0,10.125,32.625,79.5,Lenoir-Rhyne Bears,NCLR,South Atlantic Conference
+349029,Tyler,Tyler,Baron,DE,,,,2025,HOLDOUT,76.875,262.0,4.62,19.0,35.5,7.41,4.53,121.0,10.125,33.0,80.125,Miami Hurricanes,FLMI,Atlantic Coast Conference
+359504,Ethan,Ethan,Garbers,QB,,,,2025,HOLDOUT,74.375,207.0,4.95,,32.5,7.41,4.48,108.0,9.125,32.0,77.0,UCLA Bruins,CALA,Big Ten Conference
+285362,Quentin,Quentin,Lake,DS,0.0,202.0,2022.0,2022,TRAIN,73.5,199.0,4.59,,,,,,9.125,31.25,76.25,UCLA Bruins,CALA,Big Ten Conference
+337156,Ja'Quan,Ja'Quan,Sheppard,DC,0.0,,,2024,VALIDATE,73.75,199.0,4.62,,33.0,,4.4,120.0,9.25,30.625,75.375,Maryland Terrapins,MDUN,Big Ten Conference
+330226,A.J.,Anthony,Woods,DC,0.0,,,2024,VALIDATE,70.125,187.0,4.39,16.0,37.5,6.7,4.0,123.0,8.5,30.5,71.625,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+349763,Jabari,Jabari,Small,RB,0.0,,,2024,VALIDATE,69.625,200.0,4.57,,36.5,7.0,4.39,120.0,8.25,29.25,70.25,Tennessee Volunteers,TNUN,Southeastern Conference
+311703,Brock,Brock,Purdy,QB,1.0,380.0,2022.0,2022,TRAIN,72.625,212.0,4.84,,27.0,7.26,4.52,,9.25,29.0,71.75,Iowa State Cyclones,IAST,Big Twelve Conference
+325899,Gabriel,Gabriel,Murphy,DE,0.0,41.0,2024.0,2024,VALIDATE,74.5,251.0,4.68,25.0,39.5,7.11,4.31,123.0,9.375,30.375,75.625,UCLA Bruins,CALA,Big Ten Conference
+278258,Jack,Jackson,Snyder,,0.0,,,2022,TRAIN,77.0,306.0,5.15,25.0,27.5,7.7,4.58,109.0,10.0,31.25,78.5,San Jose State Spartans,CASJ,Mountain West Conference
+351662,Caden,Caden,Prieskorn,TE,,,,2025,HOLDOUT,77.875,246.0,4.77,18.0,31.0,7.19,4.54,107.0,10.125,33.5,80.5,Ole Miss Rebels,MSUN,Southeastern Conference
+349223,Jaylon,Jaylon,Carlies,DS,1.0,353.0,2024.0,2024,VALIDATE,74.875,229.0,4.5,22.0,34.5,7.03,4.46,123.0,9.875,34.125,81.125,Missouri Tigers,MOUN,Southeastern Conference
+361989,Kaden,Kaden,Prather,WR,,,,2025,HOLDOUT,75.375,209.0,4.46,,30.0,,4.14,114.0,9.375,31.5,77.125,Maryland Terrapins,MDUN,Big Ten Conference
+360521,Mikey,Mychal,Victor,DC,0.0,,,2024,VALIDATE,74.375,205.0,4.64,,35.5,6.82,4.34,124.0,9.375,34.5,80.5,Alabama State Hornets,ALST,Southwestern Athletic Conference
+300766,Diego,Diego,Fagot,,0.0,,,2022,TRAIN,74.875,235.0,4.72,22.0,36.0,7.27,4.47,113.0,8.75,30.875,75.75,Navy Midshipmen,MDNA,American Athletic Conference
+337963,Mark,Mark,Perry,DS,0.0,,,2024,VALIDATE,72.0,213.0,4.4,13.0,37.0,7.14,4.4,131.0,9.125,31.25,76.125,TCU Horned Frogs,TXCU,Big Twelve Conference
+335246,Gottlieb,Gottlieb,Ayedze,,0.0,,,2024,VALIDATE,76.25,309.0,5.01,21.0,26.5,7.71,,112.0,10.125,33.5,80.625,Maryland Terrapins,MDUN,Big Ten Conference
+289423,Nick,Nick,Muse,TE,0.0,108.0,2022.0,2022,TRAIN,76.5,258.0,4.71,27.0,30.5,7.09,4.26,111.0,9.5,31.75,77.375,South Carolina Gamecocks,SCUN,Southeastern Conference
+283341,Clint,Clint,Ratkovich,,0.0,,,2022,TRAIN,72.625,236.0,4.67,31.0,34.0,7.13,4.32,122.0,9.75,30.125,74.0,Northern Illinois Huskies,ILNO,Mid-American Conference
+300685,Isiah,Isiah,Pacheco,RB,1.0,475.0,2022.0,2022,TRAIN,70.25,222.0,4.37,27.0,33.0,7.09,4.27,118.0,9.125,30.5,74.125,Rutgers Scarlet Knights,NJRU,Big Ten Conference
+424645,Zah,Zahquan,Frazier,DC,,,,2025,HOLDOUT,74.625,184.0,4.36,14.0,37.0,7.0,4.26,126.0,8.375,33.0,80.125,UTSA Roadrunners,TXSN,American Athletic Conference
+271745,Nick,Nick,Grant,,0.0,,,2022,TRAIN,72.875,190.0,4.72,19.0,33.0,7.06,4.28,123.0,9.375,31.125,76.25,Virginia Cavaliers,VAUN,Atlantic Coast Conference
+310484,Joshua,Joshua,Johnson,,0.0,,,2022,TRAIN,70.5,179.0,4.62,14.0,,,,,8.625,32.25,74.625,Tulsa Golden Hurricane,OKTU,American Athletic Conference
+368413,Marcellas,Marcellas,Dial,DS,1.0,425.0,2024.0,2024,VALIDATE,71.625,191.0,4.46,16.0,40.5,7.29,4.42,129.0,9.125,32.75,78.375,South Carolina Gamecocks,SCUN,Southeastern Conference
+305826,Cobie,Decobie,Durant,DC,1.0,392.0,2022.0,2022,TRAIN,69.675,183.0,4.38,11.0,36.0,7.02,4.4,117.0,8.75,30.75,72.75,South Carolina State Bulldogs,SCST,Mid-Eastern Athletic Conference
+279802,Xavier,Xavier,Newman-Johnson,OG,0.0,4.0,2022.0,2022,TRAIN,73.875,297.0,5.13,23.0,27.0,8.32,4.75,,9.75,33.25,79.75,Baylor Bears,TXBA,Big Twelve Conference
+312958,Isaac,Isaac,Guerendo,RB,1.0,351.0,2024.0,2024,VALIDATE,72.0,223.0,4.33,17.0,41.5,6.94,4.15,129.0,9.125,30.5,74.875,Louisville Cardinals,KYLO,Atlantic Coast Conference
+350247,Ryan,Ryan,Watts,DS,0.0,,,2024,VALIDATE,75.125,213.0,4.53,10.0,40.5,6.82,4.13,133.0,9.25,34.5,81.375,Texas Longhorns,TXUN,Southeastern Conference
+326546,Omar,Omar,Brown,DS,0.0,24.0,2024.0,2024,VALIDATE,72.75,205.0,4.53,11.0,35.0,6.97,4.38,120.0,9.25,30.75,76.875,Nebraska Cornhuskers,NEUN,Big Ten Conference
+326531,Casey,Casey,Washington,WR,0.0,56.0,2024.0,2024,VALIDATE,72.875,201.0,4.46,13.0,39.5,7.39,4.43,127.0,9.875,31.125,76.0,Illinois Fighting Illini,ILUN,Big Ten Conference
+287953,Vederian,Vederian,Lowe,OT,0.0,53.0,2022.0,2022,TRAIN,76.625,310.0,5.22,22.0,25.5,7.83,4.71,99.0,10.25,35.0,85.75,Illinois Fighting Illini,ILUN,Big Ten Conference
+326095,Dylan,Dylan,McMahon,OC,0.0,71.0,2024.0,2024,VALIDATE,75.125,301.0,5.1,25.0,33.0,7.26,4.45,115.0,9.5,31.5,76.25,NC State Wolfpack,NCST,Atlantic Coast Conference
+305264,Ellis,Ellis,Brooks,,0.0,,,2022,TRAIN,73.375,226.0,4.77,23.0,33.5,7.28,4.31,110.0,,,,Penn State Nittany Lions,PAST,Big Ten Conference
+304854,Tre,Tre,Walker,,0.0,,,2022,TRAIN,72.25,235.0,4.72,18.0,29.5,7.95,4.95,114.0,10.375,32.375,80.0,Idaho Vandals,IDUN,Big Sky Conference
+327913,Zion,Zion,Logue,DT,0.0,42.0,2024.0,2024,VALIDATE,77.75,318.0,5.14,17.0,24.5,7.85,4.83,109.0,9.75,33.25,80.75,Georgia Bulldogs,GAUN,Southeastern Conference
+331921,Josiah,Josiah,Ezirim,OT,0.0,,,2024,VALIDATE,77.75,328.0,5.15,28.0,29.5,,,113.0,10.375,35.0,85.25,Eastern Kentucky Colonels,KYEA,United Athletic Conference
+280152,Ronnie,Ronnie,Rivers,RB,0.0,61.0,2022.0,2022,TRAIN,67.5,198.0,4.57,19.0,36.5,6.91,4.34,119.0,8.5,28.0,69.75,Fresno State Bulldogs,CAFR,Mountain West Conference
+405914,Qwan'tez,Qwan'tez,Stiggers,DC,0.0,263.0,2024.0,2024,VALIDATE,71.75,204.0,4.45,,36.0,7.08,4.32,128.0,8.875,30.5,73.375,,,
+326599,Kenny,Kenny,Logan,DS,0.0,,,2024,VALIDATE,70.875,209.0,4.68,13.0,33.0,7.14,4.53,116.0,9.625,31.75,75.75,Kansas Jayhawks,KSUN,Big Twelve Conference
+300886,Josh,Josh,Seltzner,,0.0,,,2022,TRAIN,76.625,309.0,5.27,26.0,31.0,7.46,4.53,113.0,9.75,32.5,78.0,Wisconsin Badgers,WIUN,Big Ten Conference
+349348,Sean,Sean,Martin,DE,0.0,,,,OTHER,77.5,293.0,4.88,28.0,28.5,7.38,,112.0,10.625,35.0,84.5,West Virginia Mountaineers,WVUN,Big Twelve Conference
+348705,Cam,Cameron,Horsley,DT,,,,2025,HOLDOUT,74.875,312.0,5.04,26.0,31.5,7.67,4.74,108.0,9.5,33.0,80.75,Boston College Eagles,MABC,Atlantic Coast Conference
+328168,Craig,Craig,Woodson,DS,,,,2025,HOLDOUT,72.125,203.0,4.45,13.0,36.0,7.06,4.2,127.0,8.875,31.0,74.625,California Golden Bears,CAUN,Atlantic Coast Conference
+281203,Austin,Austin,Deculus,OT,0.0,27.0,2022.0,2022,TRAIN,77.0,322.0,5.06,24.0,28.5,,4.99,109.0,9.25,34.375,83.125,LSU Tigers,LAST,Southeastern Conference
+282706,Dustin,Dustin,Crum,,0.0,,,2022,TRAIN,73.0,210.0,4.75,,,,4.36,,9.375,31.75,71.125,Kent State Golden Flashes,OHKS,Mid-American Conference
+349639,LaJohntay,LaJohntay,Wester,WR,,,,2025,HOLDOUT,69.875,170.0,4.46,,32.0,,,121.0,8.5,29.75,71.875,Colorado Buffaloes,COUN,Big Twelve Conference
+304745,Drake,Drake,Stoops,WR,0.0,,,2024,VALIDATE,69.625,186.0,4.71,8.0,30.0,7.04,4.32,107.0,8.5,29.0,69.5,Oklahoma Sooners,OKUN,Southeastern Conference
+339671,Bam,Bamidele,Olaseni,,0.0,,,2022,TRAIN,79.125,339.0,5.44,,26.0,8.25,5.02,96.0,9.875,36.5,88.375,Utah Utes,UTUN,Big Twelve Conference
+305905,Sundiata,Sundiata,Anderson,DE,0.0,,,2024,VALIDATE,76.0,247.0,4.83,15.0,38.5,7.32,4.34,123.0,9.5,33.875,79.375,Grambling State Tigers,LAGR,Southwestern Athletic Conference
+310508,Marquan,Marquan,McCall,DT,0.0,231.0,2022.0,2022,TRAIN,74.625,354.0,5.43,26.0,20.5,,5.03,86.0,11.0,33.25,80.875,Kentucky Wildcats,KYUN,Southeastern Conference
+300652,Thomas,Thomas,Booker,DE,0.0,227.0,2022.0,2022,TRAIN,75.375,301.0,4.94,31.0,,7.33,4.41,110.0,10.625,33.25,80.75,Stanford Cardinal,CAST,Atlantic Coast Conference
+325010,Tayvion,Tayvion,Robinson,,0.0,,,2024,VALIDATE,70.125,191.0,4.75,13.0,32.0,7.02,4.56,117.0,9.25,31.0,75.25,Kentucky Wildcats,KYUN,Southeastern Conference
+324989,Kedon,Kedon,Slovis,QB,0.0,,,2024,VALIDATE,74.5,219.0,4.55,,30.0,,,118.0,9.875,31.125,74.375,BYU Cougars,UTBY,Big Twelve Conference
+304293,Teagan,Teagan,Quitoriano,TE,1.0,340.0,2022.0,2022,TRAIN,77.75,256.0,4.94,22.0,32.0,7.33,4.5,117.0,9.25,33.5,79.625,Oregon State Beavers,ORST,Pacific Twelve Conference
+385199,Jerreth,Jerreth,Sterns,,0.0,,,2022,TRAIN,67.375,183.0,4.62,12.0,40.0,6.8,4.14,119.0,9.0,30.125,72.0,Western Kentucky Hilltoppers,KYWE,Conference USA
+300608,Dawson,Dawson,Deaton,,0.0,,,2022,TRAIN,77.5,308.0,5.12,24.0,29.0,7.52,4.49,108.0,9.625,32.875,81.25,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+354509,Chandler,Chandler,Martin,IB,,,,2025,HOLDOUT,71.875,229.0,4.54,17.0,37.0,,4.28,126.0,10.0,31.875,76.375,Memphis Tigers,TNMS,American Athletic Conference
+351603,O'Donnell,O'Donnell,Fortune,DC,,,,2025,HOLDOUT,72.625,189.0,4.57,13.0,33.5,7.4,4.47,118.0,9.25,31.75,74.75,South Carolina Gamecocks,SCUN,Southeastern Conference
+281435,Armani,Armani,Rogers,TE,1.0,375.0,2022.0,2022,TRAIN,,,,,,,,,,,,Ohio Bobcats,OHUN,Mid-American Conference
+312931,Julian,Julian,Pearl,OT,0.0,,,2024,VALIDATE,78.125,310.0,,,,,,,10.25,35.125,85.75,Illinois Fighting Illini,ILUN,Big Ten Conference
+339980,Marco,Marco,Ortiz,,0.0,,,,OTHER,,,,,,,,,,,,Nebraska Cornhuskers,NEUN,Big Ten Conference
+283380,Brock,Brock,Hoffman,OC,0.0,19.0,2022.0,2022,TRAIN,75.5,302.0,5.49,20.0,28.0,7.75,4.62,94.0,10.625,33.25,81.125,Virginia Tech Hokies,VAPI,Atlantic Coast Conference
+280434,Hayden,Hayden,Howerton,,0.0,,,2022,TRAIN,75.0,300.0,5.24,36.0,32.0,7.78,4.7,106.0,9.875,33.25,79.0,SMU Mustangs,TXMU,Atlantic Coast Conference
+326492,Jarius,Jarius,Monroe,DC,0.0,75.0,2024.0,2024,VALIDATE,72.75,201.0,4.64,9.0,33.0,7.3,4.32,,9.0,32.0,77.5,Tulane Green Wave,LATU,American Athletic Conference
+349682,Will,Will,Sheppard,WR,,,,2025,HOLDOUT,74.75,203.0,4.59,,38.5,,4.31,126.0,10.0,32.0,77.75,Colorado Buffaloes,COUN,Big Twelve Conference
+369216,Tommy,Tommy,Akingbesote,DT,,,,2025,HOLDOUT,75.625,307.0,5.09,,29.5,,4.76,103.0,10.0,33.0,82.5,Maryland Terrapins,MDUN,Big Ten Conference
+337584,Daequan,Daequan,Hardy,DC,0.0,,,2024,VALIDATE,69.0,182.0,4.38,15.0,42.5,7.06,4.2,126.0,8.125,30.0,70.9,Penn State Nittany Lions,PAST,Big Ten Conference
+306113,Tuli,Tuli,Letuligasenoa,DT,0.0,,,2024,VALIDATE,73.25,295.0,5.33,24.0,27.5,7.97,4.84,,9.5,31.25,77.625,Washington Huskies,WAUN,Big Ten Conference
+364058,Mason,Mason,Pline,,0.0,,,2024,VALIDATE,78.375,251.0,4.79,,33.0,7.45,4.65,118.0,10.25,33.0,78.625,Furman Paladins,SCFU,Southern Conference
+337857,Willis,Willis,Patrick,OG,0.0,,,2024,VALIDATE,75.0,319.0,5.32,24.0,25.5,8.63,,101.0,9.875,32.375,79.5,TCU Horned Frogs,TXCU,Big Twelve Conference
+352510,Antwane,Antwane,Wells,WR,,,,2025,HOLDOUT,72.75,204.0,4.58,,34.0,,,124.0,8.375,32.625,77.25,Ole Miss Rebels,MSUN,Southeastern Conference
+282907,Samori,Samori,Toure,WR,0.0,114.0,2022.0,2022,TRAIN,72.875,191.0,4.48,7.0,34.5,6.77,4.22,124.0,9.375,32.25,76.75,Nebraska Cornhuskers,NEUN,Big Ten Conference
+339245,Kalen,Kalen,DeLoach,IB,0.0,,,2024,VALIDATE,71.375,216.0,4.47,23.0,30.5,,,119.0,8.5,31.0,73.75,Florida State Seminoles,FLST,Atlantic Coast Conference
+328048,M.J.,Marlin,Devonshire,DC,0.0,,,2024,VALIDATE,71.375,189.0,4.45,10.0,38.5,7.0,4.31,124.0,8.875,33.5,79.125,Pittsburgh Panthers,PAPT,Atlantic Coast Conference
+377685,Thomas,Thomas,Perry,,,,,2025,HOLDOUT,,,,,,,,,,,,Middlebury Panthers,VTMI,New England Small College Athletic Conference
+336496,John Rhys,John Rhys,Plumlee,QB,0.0,,,2024,VALIDATE,71.75,203.0,4.51,,36.5,6.96,4.27,124.0,8.875,30.375,74.125,UCF Knights,FLCE,Big Twelve Conference
+338968,Tyron,Tyron,Herring,DC,,,,2025,HOLDOUT,73.0,201.0,4.49,10.0,31.5,7.25,4.41,119.0,9.25,31.875,77.125,Delaware Fightin' Blue Hens,DEUN,Conference USA
+338131,Marcus,Marcus,Wehr,,0.0,,,,OTHER,74.625,301.0,5.15,29.0,34.5,8.15,4.91,114.0,8.375,31.625,77.625,Montana State Bobcats,MTST,Big Sky Conference
+277795,Dallis,Dallis,Flowers,DC,1.0,317.0,2022.0,2022,TRAIN,73.0,196.0,4.4,,,7.07,4.34,131.0,9.875,32.0,78.0,Pittsburg State Gorillas,KSPS,Mid-America Intercollegiate Athletic Association
+326405,Josh,Josh,Wallace,DC,1.0,389.0,2024.0,2024,VALIDATE,71.125,186.0,4.68,13.0,34.0,7.03,4.35,124.0,9.0,31.25,76.0,Michigan Wolverines,MIUN,Big Ten Conference
+317591,Caleb,Caleb,Shudak,,0.0,,,2022,TRAIN,66.625,177.0,,,,,,,9.0,28.375,70.125,Iowa Hawkeyes,IAUN,Big Ten Conference
+352880,Efton,Efton,Chism,WR,,,,2025,HOLDOUT,70.5,193.0,4.71,16.0,34.5,6.77,4.06,118.0,9.0,30.5,73.5,Eastern Washington Eagles,WAEA,Big Sky Conference
+327662,Dadrion,Dadrion,Taylor-Demerson,DS,1.0,544.0,2024.0,2024,VALIDATE,70.375,200.0,4.41,18.0,38.0,7.0,4.39,123.0,9.625,30.5,74.25,Texas Tech Red Raiders,TXTC,Big Twelve Conference
+353749,Teddye,Teddye,Buchanan,IB,,,,2025,HOLDOUT,74.0,235.0,4.6,26.0,40.0,7.24,4.27,125.0,9.5,31.375,75.5,California Golden Bears,CAUN,Atlantic Coast Conference
+361567,Payton,Payton,Page,DT,,,,2025,HOLDOUT,75.5,300.0,5.13,27.0,33.0,,,116.0,10.0,31.375,79.375,Clemson Tigers,SCCL,Atlantic Coast Conference
+304374,Tayland,Tayland,Humphrey,,0.0,,,,OTHER,72.375,328.0,5.44,20.0,26.0,8.34,5.12,98.0,,,,Louisiana Ragin' Cajuns,LASW,Sun Belt Conference
+350070,Jackson,Jackson,Woodard,IB,,,,2025,HOLDOUT,74.125,230.0,4.87,21.0,36.0,7.44,4.5,117.0,9.375,31.375,77.125,UNLV Rebels,NVLV,Mountain West Conference
+327851,Nathan,Nathan,Pickering,DT,0.0,,,2024,VALIDATE,75.75,314.0,,18.0,24.5,7.81,4.7,,10.125,33.125,80.0,Mississippi State Bulldogs,MSST,Southeastern Conference
+285545,De'Shaan,De'Shaan,Dixon,DE,0.0,29.0,2022.0,2022,TRAIN,76.25,247.0,4.71,15.0,34.0,7.17,4.6,114.0,10.375,33.5,81.25,Norfolk State Spartans,VANO,Mid-Eastern Athletic Conference
