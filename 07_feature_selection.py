@@ -29,9 +29,6 @@ print('='*70)
 print('PHASE 7: FINAL MODEL & FEATURE SELECTION')
 print('='*70)
 
-# =============================================================================
-# STEP 1: LOAD COMPOSITE-ENHANCED DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOADING DATA')
@@ -48,9 +45,6 @@ feature_cols = [col for col in train.columns
                 if col not in ['gsis_player_id', 'target', 'position_group']]
 print(f'Total features: {len(feature_cols)}')
 
-# =============================================================================
-# STEP 2: INITIAL MODEL FOR FEATURE IMPORTANCE (7.1)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: FEATURE IMPORTANCE ANALYSIS')
@@ -88,9 +82,6 @@ val_proba_initial = model.predict_proba(X_val_scaled)[:, 1]
 initial_auc = roc_auc_score(y_val, val_proba_initial)
 print(f'\nInitial Val AUC: {initial_auc:.4f}')
 
-# =============================================================================
-# STEP 3: FEATURE SELECTION (7.2)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: FEATURE SELECTION (drop <1% importance)')
@@ -150,9 +141,6 @@ print(f'  Train AUC: {train_auc:.4f}')
 print(f'  Val AUC: {val_auc:.4f}')
 print(f'  Change: {val_auc - initial_auc:+.4f}')
 
-# =============================================================================
-# STEP 4: CALIBRATION CHECK BY POSITION (7.3)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: CALIBRATION BY POSITION GROUP')
@@ -221,9 +209,6 @@ plt.savefig(FIGURES_DIR / 'calibration_by_position.png', dpi=150)
 print(f'\n[OK] Saved: {FIGURES_DIR / "calibration_by_position.png"}')
 plt.close()
 
-# =============================================================================
-# STEP 5: FINAL EVALUATION (7.4)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: FINAL EVALUATION')
@@ -248,9 +233,6 @@ for k in [5, 10, 15, 20]:
     n_contrib = int(y_val.iloc[top_k_idx].sum())
     print(f'  Top {k}: {precision*100:.1f}% ({n_contrib}/{k} contributors)')
 
-# =============================================================================
-# STEP 6: GENERATE FINAL PREDICTIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: FINAL PREDICTIONS')
@@ -286,9 +268,6 @@ print(final_predictions.head(20).to_string(index=False))
 final_predictions.to_csv(MODELS_DIR / 'predictions_2025_phase7.csv', index=False)
 print(f'\n[OK] Saved: {MODELS_DIR / "predictions_2025_phase7.csv"}')
 
-# =============================================================================
-# STEP 7: SAVE FINAL MODEL ARTIFACTS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: SAVING MODEL ARTIFACTS')
@@ -318,38 +297,7 @@ plt.savefig(FIGURES_DIR / 'feature_importance_final.png', dpi=150)
 print(f'[OK] Saved: {FIGURES_DIR / "feature_importance_final.png"}')
 plt.close()
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
 print('PHASE 7: COMPLETE')
 print('='*70)
 
-target_met = 0.71 <= val_auc <= 0.72
-
-print(f'''
-FINAL MODEL SUMMARY
-===================
-Feature Selection:
-  - Initial features: {len(feature_cols)}
-  - After selection: {len(important_features)}
-  - Dropped: {len(dropped_features)} (< 1% importance)
-
-Performance:
-  - Val AUC: {val_auc:.4f}
-  - Expected: 0.71-0.72
-  - Status: {"MET" if target_met else "ABOVE" if val_auc > 0.72 else "BELOW"} expectations
-
-Calibration:
-  - Brier Score: {brier_score_loss(y_val, val_proba):.4f}
-  - Overall calibration: {val_proba.mean() / y_val.mean():.2f}x
-
-Deliverables:
-  - Predictions: {MODELS_DIR / "predictions_2025_phase7.csv"}
-  - Feature importance: {MODELS_DIR / "feature_importance_final.csv"}
-  - Calibration plot: {FIGURES_DIR / "calibration_by_position.png"}
-  - Feature importance plot: {FIGURES_DIR / "feature_importance_final.png"}
-
-Model is ready for deployment!
-''')

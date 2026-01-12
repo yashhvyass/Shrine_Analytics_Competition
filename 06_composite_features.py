@@ -29,9 +29,6 @@ print('='*70)
 print('PHASE 6: COMPOSITE SCORES & INTERACTIONS')
 print('='*70)
 
-# =============================================================================
-# STEP 1: LOAD POSITION-ENHANCED DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOADING POSITION-ENHANCED DATA')
@@ -48,9 +45,6 @@ existing_features = [col for col in train.columns
                      if col not in ['gsis_player_id', 'target', 'position_group']]
 print(f'Existing features: {len(existing_features)}')
 
-# =============================================================================
-# STEP 2: COMPOSITE SCORES (6.1)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: COMPOSITE SCORES')
@@ -127,9 +121,6 @@ print('\nComposite score statistics (TRAIN):')
 for col in composite_cols:
     print(f'  {col}: mean={train[col].mean():.3f}, std={train[col].std():.3f}')
 
-# =============================================================================
-# STEP 3: SELECTIVE INTERACTIONS (6.2)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: SELECTIVE INTERACTIONS (8 key position x metric)')
@@ -177,9 +168,6 @@ print(f'\n[OK] Created {len(interaction_cols)} interaction features:')
 for col in interaction_cols:
     print(f'  - {col}')
 
-# =============================================================================
-# STEP 4: PREPARE FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: PREPARING FEATURES')
@@ -209,9 +197,6 @@ X_holdout = holdout[all_features].copy()
 for df in [X_train, X_val, X_holdout]:
     df.fillna(0, inplace=True)
 
-# =============================================================================
-# STEP 5: TRAIN AND EVALUATE (6.3)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: TRAINING AND EVALUATION')
@@ -242,9 +227,6 @@ for k in [10, 20]:
     precision = y_val.iloc[top_k_idx].mean()
     print(f'  Top {k}: {precision*100:.1f}% ({int(y_val.iloc[top_k_idx].sum())}/{k})')
 
-# =============================================================================
-# STEP 6: FEATURE IMPORTANCE
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: FEATURE IMPORTANCE')
@@ -268,9 +250,6 @@ print(f'  Composite scores: {composite_imp*100:.1f}%')
 print(f'  Interactions: {interaction_imp*100:.1f}%')
 print(f'  Other: {other_imp*100:.1f}%')
 
-# =============================================================================
-# STEP 7: SAVE ENHANCED DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: SAVING ENHANCED DATA')
@@ -289,35 +268,7 @@ print(f'[OK] Saved enhanced datasets')
 
 importance.to_csv(MODELS_DIR / 'feature_importance_phase6.csv', index=False)
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
 print('PHASE 6: COMPLETE')
 print('='*70)
 
-print(f'''
-SUMMARY
-=======
-New Features Created:
-  - Composite scores: {len(composite_cols)}
-    - explosiveness (vertical + broad jump)
-    - agility (three_cone + shuttle, inverted)
-    - size_weight_speed (weight / forty)
-  - Interactions: {len(interaction_cols)}
-    - 8 key position x metric interactions
-  - Total features: {len(all_features)}
-
-Performance:
-  - Val AUC: {val_auc:.4f}
-  - Expected: 0.700-0.710
-  - Status: {"MET" if 0.700 <= val_auc <= 0.710 else "ABOVE" if val_auc > 0.710 else "BELOW"} expectations
-
-Key Implementation Notes:
-  - Composite stats fitted on TRAIN only
-  - Only 8 interactions (not 40) to prevent overfitting
-  - Interactions use normalized metrics
-
-Next: Run phase07_final_evaluation.py
-''')

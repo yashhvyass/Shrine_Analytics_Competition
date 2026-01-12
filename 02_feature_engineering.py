@@ -11,9 +11,6 @@ import pandas as pd
 from pathlib import Path
 import time
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
 
 PROJECT_DIR = Path(__file__).parent
 PROCESSED_DIR = PROJECT_DIR / 'processed'
@@ -27,9 +24,6 @@ print('PHASE 2: FEATURE ENGINEERING (TRACKING DATA)')
 print('='*70)
 print(f'\nUsing Polars for efficient processing')
 
-# =============================================================================
-# STEP 1: FIND ALL TRACKING FILES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: FINDING TRACKING FILES')
@@ -52,9 +46,6 @@ all_files = practice_files + game_files
 total_size_gb = sum(f.stat().st_size for f in all_files) / (1024**3)
 print(f'\nTotal: {len(all_files)} files, {total_size_gb:.2f} GB')
 
-# =============================================================================
-# STEP 2: DEFINE FEATURE EXTRACTION FUNCTION
-# =============================================================================
 
 def extract_features_from_file(file_path):
     """Extract player-level features from a single tracking file using Polars."""
@@ -106,9 +97,6 @@ def extract_features_from_file(file_path):
         print(f'    [ERROR] {e}')
         return None
 
-# =============================================================================
-# STEP 3: PROCESS ALL FILES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: EXTRACTING FEATURES FROM TRACKING DATA')
@@ -131,9 +119,6 @@ for i, file_path in enumerate(all_files, 1):
 
 print(f'\n[OK] Processed {len(all_features)}/{len(all_files)} files in {time.time() - start_time:.1f}s')
 
-# =============================================================================
-# STEP 4: AGGREGATE ACROSS ALL FILES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: AGGREGATING FEATURES')
@@ -190,9 +175,6 @@ player_features = player_features.with_columns([
 
 print(f'\n[OK] Final player features: {len(player_features)} players, {len(player_features.columns)} features')
 
-# =============================================================================
-# STEP 5: SAVE TRACKING FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: SAVING TRACKING FEATURES')
@@ -209,9 +191,6 @@ tracking_df.to_csv(PROCESSED_DIR / 'tracking_features.csv', index=False)
 print(f'[OK] Saved: {PROCESSED_DIR / "tracking_features.csv"}')
 print(f'     Shape: {tracking_df.shape}')
 
-# =============================================================================
-# STEP 6: FEATURE SUMMARY
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: FEATURE SUMMARY')
@@ -224,26 +203,7 @@ for col in tracking_df.columns:
         std_val = tracking_df[col].std()
         print(f'  {col:<30} mean: {mean_val:8.2f}, std: {std_val:8.2f}')
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
 print('PHASE 2: COMPLETE')
 print('='*70)
 
-print(f'''
-SUMMARY
-=======
-Files processed: {len(all_features)}/{len(all_files)}
-Total data processed: {total_size_gb:.2f} GB
-Processing time: {time.time() - start_time:.1f} seconds
-
-Features extracted:
-  - Players: {len(tracking_df)}
-  - Features: {len(tracking_df.columns) - 1}
-
-Output: {PROCESSED_DIR / "tracking_features.csv"}
-
-Next: Run phase03_baseline_model.py or phase04_final_model.py
-''')

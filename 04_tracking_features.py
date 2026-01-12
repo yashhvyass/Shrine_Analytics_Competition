@@ -14,9 +14,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
 
 PROCESSED_DIR = Path(__file__).parent / 'processed'
 MODELS_DIR = Path(__file__).parent / 'models'
@@ -53,9 +50,6 @@ print('PHASE 4: FINAL MODEL (COMBINE + TRACKING)')
 print('='*70)
 print(f'\nTarget: >= 300 rookie snaps (HIGH-IMPACT contributor)')
 
-# =============================================================================
-# STEP 1: LOAD DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOADING DATA')
@@ -80,9 +74,6 @@ else:
     tracking = None
     has_tracking = False
 
-# =============================================================================
-# STEP 2: MERGE DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: MERGING DATA')
@@ -98,9 +89,6 @@ else:
     merged = master.copy()
     print(f'[OK] Using master data only: {len(merged)} players')
 
-# =============================================================================
-# STEP 3: PREPARE FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: PREPARING FEATURES')
@@ -138,9 +126,6 @@ print(f'\nTarget distribution (TRAIN):')
 print(f'  Contributors: {int(y_train.sum())} ({y_train.mean()*100:.1f}%)')
 print(f'  Non-contributors: {int((y_train==0).sum())} ({(y_train==0).mean()*100:.1f}%)')
 
-# =============================================================================
-# STEP 4: HANDLE MISSING VALUES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: HANDLING MISSING VALUES')
@@ -170,9 +155,6 @@ print(f'[OK] Missing values handled')
 print(f'  TRAIN missing: {X_train.isnull().sum().sum()}')
 print(f'  VALIDATE missing: {X_val.isnull().sum().sum()}')
 
-# =============================================================================
-# STEP 5: SCALE FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: SCALING FEATURES')
@@ -185,9 +167,6 @@ X_holdout_scaled = scaler.transform(X_holdout)
 
 print('[OK] Features standardized')
 
-# =============================================================================
-# STEP 6: TRAIN MODEL
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: TRAINING MODEL')
@@ -211,9 +190,6 @@ print(f'  Train AUC: {train_auc:.4f}')
 print(f'  Val AUC: {val_auc:.4f}')
 print(f'  Overfit: {train_auc - val_auc:.4f}')
 
-# =============================================================================
-# STEP 7: DETAILED EVALUATION
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: DETAILED EVALUATION')
@@ -231,9 +207,6 @@ for k in [10, 20, 30]:
     precision = y_val.iloc[top_k_idx].mean()
     print(f'  Top {k}: {precision*100:.1f}% ({int(y_val.iloc[top_k_idx].sum())}/{k} contributors)')
 
-# =============================================================================
-# STEP 8: FEATURE IMPORTANCE
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 8: FEATURE IMPORTANCE')
@@ -261,9 +234,6 @@ print(f'  Tracking: {tracking_importance*100:.1f}%')
 print(f'  Combine: {combine_importance*100:.1f}%')
 print(f'  Other: {other_importance*100:.1f}%')
 
-# =============================================================================
-# STEP 9: VISUALIZATION
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 9: VISUALIZATIONS')
@@ -301,9 +271,6 @@ plt.savefig(FIGURES_DIR / 'feature_importance.png', dpi=150, bbox_inches='tight'
 print(f'[OK] Saved: {FIGURES_DIR / "feature_importance.png"}')
 plt.close()
 
-# =============================================================================
-# STEP 10: FINAL PREDICTIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 10: FINAL PREDICTIONS')
@@ -322,9 +289,6 @@ print(f'[OK] Saved: {MODELS_DIR / "predictions_2025_FINAL.csv"}')
 print('\nTop 20 Predicted Contributors (2025):')
 print(predictions[['rank', 'football_name', 'position', 'pred_prob']].head(20).to_string(index=False))
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
 
 print('\n' + '='*70)
 print('PHASE 4: COMPLETE')

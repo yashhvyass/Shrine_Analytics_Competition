@@ -36,9 +36,6 @@ print('='*70)
 print('PHASE 8-9: COMPREHENSIVE MODEL EVALUATION')
 print('='*70)
 
-# =============================================================================
-# STEP 1: LOAD DATA AND TRAIN MODEL
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOAD DATA AND TRAIN FINAL MODEL')
@@ -147,9 +144,6 @@ y_proba = model.predict_proba(X_val_scaled)[:, 1]
 baseline_auc = roc_auc_score(y_val, y_proba)
 print(f'\nFinal Model Val AUC: {baseline_auc:.4f}')
 
-# =============================================================================
-# STEP 2: SHAP ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: SHAP ANALYSIS')
@@ -234,9 +228,6 @@ except ImportError:
 except Exception as e:
     print(f'[ERROR] SHAP: {e}')
 
-# =============================================================================
-# STEP 3: BOOTSTRAP CONFIDENCE INTERVALS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: BOOTSTRAP CONFIDENCE INTERVALS')
@@ -284,9 +275,6 @@ ci_report = pd.DataFrame([
 ])
 ci_report.to_csv(MODELS_DIR / 'confidence_intervals.csv', index=False)
 
-# =============================================================================
-# STEP 4: POSITION-SPECIFIC AUC
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: POSITION-SPECIFIC AUC')
@@ -317,9 +305,6 @@ for group in ['DB', 'SKILL', 'OL', 'DL', 'LB', 'UNKNOWN']:
 
 pd.DataFrame(position_results).to_csv(MODELS_DIR / 'position_auc.csv', index=False)
 
-# =============================================================================
-# STEP 5: ROC CURVE
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: ROC CURVE')
@@ -341,9 +326,6 @@ plt.savefig(FIGURES_DIR / 'roc_curve.png', dpi=150)
 plt.close()
 print(f'[OK] Saved: {FIGURES_DIR / "roc_curve.png"}')
 
-# =============================================================================
-# STEP 6: PRECISION/RECALL AT K
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: PRECISION/RECALL AT K')
@@ -380,9 +362,6 @@ plt.savefig(FIGURES_DIR / 'precision_recall_at_k.png', dpi=150)
 plt.close()
 print(f'[OK] Saved: {FIGURES_DIR / "precision_recall_at_k.png"}')
 
-# =============================================================================
-# STEP 7: CALIBRATION ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: CALIBRATION ANALYSIS')
@@ -406,9 +385,6 @@ plt.savefig(FIGURES_DIR / 'calibration_curve.png', dpi=150)
 plt.close()
 print(f'[OK] Saved: {FIGURES_DIR / "calibration_curve.png"}')
 
-# =============================================================================
-# STEP 8: THRESHOLD ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 8: THRESHOLD ANALYSIS')
@@ -438,9 +414,6 @@ for t in thresholds:
 
 pd.DataFrame(threshold_results).to_csv(MODELS_DIR / 'threshold_analysis.csv', index=False)
 
-# =============================================================================
-# STEP 9: FINAL PREDICTIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 9: FINAL PREDICTIONS (2025 HOLDOUT)')
@@ -475,36 +448,7 @@ for group in ['DB', 'SKILL', 'OL', 'DL', 'LB']:
 predictions.to_csv(MODELS_DIR / 'predictions_final.csv', index=False)
 print(f'\n[OK] Saved: {MODELS_DIR / "predictions_final.csv"}')
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
-print('SUMMARY')
+print('PHASE 8-9: COMPLETE')
 print('='*70)
 
-print(f'''
-FINAL MODEL PERFORMANCE
------------------------
-Val AUC:        {baseline_auc:.4f}
-95% CI:         [{auc_boot["ci_lower"]:.3f}, {auc_boot["ci_upper"]:.3f}]
-Precision@10:   {precision_at_k(y_val, y_proba):.1%}
-Lift:           {precision_at_k(y_val, y_proba)/baseline_rate:.2f}x
-Brier Score:    {brier:.4f}
-Features:       {len(final_features)}
-
-DELIVERABLES
-------------
-Models:
-  - {MODELS_DIR / "predictions_final.csv"}
-  - {MODELS_DIR / "confidence_intervals.csv"}
-  - {MODELS_DIR / "position_auc.csv"}
-  - {MODELS_DIR / "threshold_analysis.csv"}
-
-Figures:
-  - {FIGURES_DIR / "shap_summary.png"}
-  - {FIGURES_DIR / "shap_importance.png"}
-  - {FIGURES_DIR / "roc_curve.png"}
-  - {FIGURES_DIR / "precision_recall_at_k.png"}
-  - {FIGURES_DIR / "calibration_curve.png"}
-''')

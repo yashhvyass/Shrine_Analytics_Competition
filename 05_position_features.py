@@ -31,9 +31,6 @@ print('='*70)
 print('PHASE 5: POSITION FOUNDATION FEATURES')
 print('='*70)
 
-# =============================================================================
-# STEP 1: LOAD DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOADING DATA')
@@ -49,9 +46,6 @@ tracking['gsis_id'] = tracking['gsis_id'].apply(lambda x: str(int(float(x))))
 merged = master.merge(tracking, left_on='gsis_player_id', right_on='gsis_id', how='left')
 print(f'[OK] Loaded {len(merged)} players')
 
-# =============================================================================
-# STEP 2: CREATE POSITION GROUPS (5.1)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 2: CREATING POSITION GROUPS')
@@ -69,9 +63,6 @@ group_dist = merged['position_group'].value_counts()
 for group, count in group_dist.items():
     print(f'  {group}: {count}')
 
-# =============================================================================
-# STEP 3: POSITION Z-SCORES (5.2) - FIT ON TRAIN ONLY
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: POSITION Z-SCORES (Fit on TRAIN only)')
@@ -146,9 +137,6 @@ holdout = compute_position_zscores(holdout, position_stats)
 zscore_cols = [f'{m}_zscore' for m in ZSCORE_METRICS]
 print(f'\n[OK] Created {len(zscore_cols)} z-score features')
 
-# =============================================================================
-# STEP 4: THRESHOLD PASS/FAIL FEATURES (5.3)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: THRESHOLD PASS/FAIL FEATURES')
@@ -190,9 +178,6 @@ for col in threshold_cols:
     pass_rate = train[col].mean() * 100
     print(f'  {col}: {pass_rate:.1f}%')
 
-# =============================================================================
-# STEP 5: POSITION GROUP ONE-HOT ENCODING (5.4)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: POSITION GROUP ONE-HOT ENCODING')
@@ -208,9 +193,6 @@ for group in POSITION_GROUPS.keys():
 onehot_cols = [f'pos_{g}' for g in POSITION_GROUPS.keys()]
 print(f'[OK] Created {len(onehot_cols)} one-hot features')
 
-# =============================================================================
-# STEP 6: PREPARE FEATURES FOR TRAINING
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: PREPARING FEATURES')
@@ -254,9 +236,6 @@ print(f'  X_train: {X_train.shape}')
 print(f'  X_val: {X_val.shape}')
 print(f'  X_holdout: {X_holdout.shape}')
 
-# =============================================================================
-# STEP 7: TRAIN AND EVALUATE (5.5)
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: TRAINING AND EVALUATION')
@@ -290,9 +269,6 @@ for k in [10, 20]:
     precision = y_val.iloc[top_k_idx].mean()
     print(f'  Top {k}: {precision*100:.1f}% ({int(y_val.iloc[top_k_idx].sum())}/{k})')
 
-# =============================================================================
-# STEP 8: FEATURE IMPORTANCE ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 8: FEATURE IMPORTANCE')
@@ -318,9 +294,6 @@ print(f'  Thresholds: {threshold_imp*100:.1f}%')
 print(f'  Position one-hot: {onehot_imp*100:.1f}%')
 print(f'  Other (combine + tracking): {other_imp*100:.1f}%')
 
-# =============================================================================
-# STEP 9: SAVE FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 9: SAVING ENHANCED DATA')
@@ -342,33 +315,7 @@ print(f'[OK] Saved: {PROCESSED_DIR / "holdout_position_features.csv"}')
 # Save feature importance
 importance.to_csv(MODELS_DIR / 'feature_importance_phase5.csv', index=False)
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
 print('PHASE 5: COMPLETE')
 print('='*70)
 
-print(f'''
-SUMMARY
-=======
-New Features Created:
-  - Position groups: 5 (DB, SKILL, OL, DL, LB)
-  - Z-score features: {len(zscore_cols)}
-  - Threshold features: {len(threshold_cols)}
-  - One-hot features: {len(onehot_cols)}
-  - Total features: {len(all_feature_cols)}
-
-Performance:
-  - Val AUC: {val_auc:.4f}
-  - Expected: 0.685-0.695
-  - Status: {"MET" if 0.685 <= val_auc <= 0.695 else "ABOVE" if val_auc > 0.695 else "BELOW"} expectations
-
-Key Implementation Notes:
-  - Z-scores fitted on TRAIN only (no data leakage)
-  - Used position_group, not raw position
-  - Thresholds are position-specific
-
-Next: Run phase06_composites.py
-''')

@@ -15,9 +15,6 @@ import numpy as np
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
 
 PROJECT_DIR = Path(__file__).parent
 PROCESSED_DIR = PROJECT_DIR / 'processed'
@@ -35,24 +32,17 @@ print('PHASE 1: EXPLORATORY DATA ANALYSIS & DATA PREPARATION')
 print('='*70)
 print(f'\nTarget: >= {SNAP_THRESHOLD} rookie snaps (HIGH-IMPACT contributor)')
 
-# #############################################################################
-#                      PART A: RAW DATA ANALYSIS
-# #############################################################################
 
 print('\n')
 print('#' * 70)
 print('#  PART A: RAW DATA ANALYSIS')
 print('#' * 70)
 
-# =============================================================================
-# A1: LOAD RAW FILES
-# =============================================================================
 
 print('\n' + '='*70)
 print('A1: LOADING RAW FILES')
 print('='*70)
 
-# 1. Player combine data
 raw_players = pd.read_parquet(PROJECT_DIR / 'shrine_bowl_players.parquet')
 print(f'\n[1] shrine_bowl_players.parquet: {len(raw_players)} players, {len(raw_players.columns)} columns')
 
@@ -68,9 +58,6 @@ print(f'[3] shrine_bowl_players_nfl_rookie_stats.csv: {len(raw_nfl)} records, {r
 raw_sessions = pd.read_csv(PROJECT_DIR / 'session_timestamps.csv')
 print(f'[4] session_timestamps.csv: {len(raw_sessions)} sessions')
 
-# =============================================================================
-# A2: PLAYER COMBINE DATA ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('A2: PLAYER COMBINE DATA')
@@ -97,9 +84,6 @@ for col in combine_cols:
         mean_val = col_numeric.mean()
         print(f'  {col:<25} {coverage:5.1f}% coverage, mean: {mean_val:.2f}')
 
-# =============================================================================
-# A3: COLLEGE STATS ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('A3: COLLEGE STATS')
@@ -111,9 +95,6 @@ print(raw_college['season'].value_counts().sort_index())
 print(f'\n--- Positions ---')
 print(raw_college['position'].value_counts().head(10))
 
-# =============================================================================
-# A4: NFL ROOKIE STATS ANALYSIS  
-# =============================================================================
 
 print('\n' + '='*70)
 print('A4: NFL ROOKIE STATS')
@@ -138,9 +119,6 @@ drafted = raw_nfl['draft_round'].notna().sum()
 print(f'  Drafted: {drafted} ({drafted/len(raw_nfl)*100:.1f}%)')
 print(f'  Undrafted: {len(raw_nfl) - drafted}')
 
-# =============================================================================
-# A5: RAW DATA VISUALIZATIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('A5: RAW DATA VISUALIZATIONS')
@@ -191,18 +169,12 @@ plt.savefig(FIGURES_DIR / 'eda_raw_data.png', dpi=150, bbox_inches='tight')
 print(f'[OK] Saved: {FIGURES_DIR / "eda_raw_data.png"}')
 plt.close()
 
-# #############################################################################
-#                      PART B: DATA PROCESSING
-# #############################################################################
 
 print('\n')
 print('#' * 70)
 print('#  PART B: DATA PROCESSING')
 print('#' * 70)
 
-# =============================================================================
-# B1: CREATE MASTER DATASET
-# =============================================================================
 
 print('\n' + '='*70)
 print('B1: CREATING MASTER DATASET')
@@ -223,9 +195,6 @@ master['shrine_bowl_year'] = pd.to_numeric(master['draft_season'], errors='coerc
 print(f'[OK] Base players: {len(master)}')
 print(f'     Years: {master["shrine_bowl_year"].value_counts().sort_index().to_dict()}')
 
-# =============================================================================
-# B2: ADD NFL OUTCOMES
-# =============================================================================
 
 print('\n' + '='*70)
 print('B2: ADDING NFL OUTCOMES')
@@ -270,9 +239,6 @@ print(f'After merge: {len(master)} players')
 print(f'Players with NFL data: {master["total_snaps"].notna().sum()}')
 print(f'Players with position: {master["position"].notna().sum()}')
 
-# =============================================================================
-# B3: CREATE TARGET VARIABLE
-# =============================================================================
 
 print('\n' + '='*70)
 print('B3: CREATING TARGET VARIABLE')
@@ -315,9 +281,6 @@ print(f'Non-contributors: {n_total - n_contrib} ({(n_total-n_contrib)/n_total*10
 print(f'  - Had <300 snaps: {n_train_val["total_snaps"].notna().sum() - n_contrib}')
 print(f'  - Not in NFL stats: {n_train_val["total_snaps"].isna().sum()}')
 
-# =============================================================================
-# B4: COHORT SUMMARY
-# =============================================================================
 
 print('\n' + '='*70)
 print('B4: COHORT SUMMARY')
@@ -334,9 +297,6 @@ for cohort in ['TRAIN', 'VALIDATE', 'HOLDOUT']:
     else:
         print(f'  {cohort}: {len(sub)} players, outcomes unknown')
 
-# =============================================================================
-# B5: SAVE PROCESSED DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('B5: SAVING PROCESSED DATA')
@@ -372,18 +332,12 @@ raw_nfl_processed.to_csv(PROCESSED_DIR / 'processed_nfl_rookie_stats.csv', index
 print(f'[OK] Saved: {PROCESSED_DIR / "processed_college_stats.csv"}')
 print(f'[OK] Saved: {PROCESSED_DIR / "processed_nfl_rookie_stats.csv"}')
 
-# #############################################################################
-#                      PART C: PROCESSED DATA ANALYSIS
-# #############################################################################
 
 print('\n')
 print('#' * 70)
 print('#  PART C: PROCESSED DATA ANALYSIS')
 print('#' * 70)
 
-# =============================================================================
-# C1: PROCESSED DATA OVERVIEW
-# =============================================================================
 
 print('\n' + '='*70)
 print('C1: PROCESSED DATA OVERVIEW')
@@ -392,9 +346,6 @@ print('='*70)
 print(f'\nMaster dataset: {len(master_clean)} players, {len(master_clean.columns)} columns')
 print(f'Columns: {list(master_clean.columns)}')
 
-# =============================================================================
-# C2: TARGET ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('C2: TARGET VARIABLE ANALYSIS')
@@ -414,9 +365,6 @@ if len(contributors) > 0:
     print(f'  Max: {contributors["total_snaps"].max():.0f}')  
     print(f'  Mean: {contributors["total_snaps"].mean():.0f}')
 
-# =============================================================================
-# C3: COHORT ANALYSIS
-# =============================================================================
 
 print('\n' + '='*70)
 print('C3: COHORT ANALYSIS')
@@ -429,9 +377,6 @@ for cohort in ['TRAIN', 'VALIDATE', 'HOLDOUT']:
     rate = sub['target'].mean() * 100 if sub['target'].notna().any() else 0
     print(f'{cohort} ({year}): {len(sub)} players, {n_contrib} contributors ({rate:.1f}%)')
 
-# =============================================================================
-# C4: FEATURE COVERAGE
-# =============================================================================
 
 print('\n' + '='*70)
 print('C4: FEATURE COVERAGE')
@@ -450,9 +395,6 @@ for cohort in ['TRAIN', 'VALIDATE', 'HOLDOUT']:
     cov = sub['position'].notna().mean() * 100
     print(f'  {cohort}: {cov:.1f}%')
 
-# =============================================================================
-# C5: CONTRIBUTOR COMPARISON
-# =============================================================================
 
 print('\n' + '='*70)
 print('C5: CONTRIBUTORS VS NON-CONTRIBUTORS')
@@ -467,9 +409,6 @@ if len(contributors) > 0 and len(non_contributors) > 0:
             diff = contrib_mean - non_mean
             print(f'  {col:<25} Contrib: {contrib_mean:7.2f}, Non: {non_mean:7.2f}, Diff: {diff:+.2f}')
 
-# =============================================================================
-# C6: PROCESSED DATA VISUALIZATIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('C6: PROCESSED DATA VISUALIZATIONS')
@@ -531,9 +470,6 @@ plt.savefig(FIGURES_DIR / 'eda_processed_data.png', dpi=150, bbox_inches='tight'
 print(f'[OK] Saved: {FIGURES_DIR / "eda_processed_data.png"}')
 plt.close()
 
-# =============================================================================
-# C7: DATA QUALITY CHECKS
-# =============================================================================
 
 print('\n' + '='*70)
 print('C7: DATA QUALITY CHECKS')
@@ -555,42 +491,7 @@ for name, result in checks:
     if not result:
         all_passed = False
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
 print('PHASE 1: COMPLETE')
 print('='*70)
 
-print(f'''
-SUMMARY
-=======
-RAW DATA ANALYZED:
-  - shrine_bowl_players.parquet: {len(raw_players)} players
-  - shrine_bowl_players_college_stats.csv: {len(raw_college)} records
-  - shrine_bowl_players_nfl_rookie_stats.csv: {len(raw_nfl)} records
-
-PROCESSED DATA CREATED:
-  - master_dataset_clean.csv: {len(master_clean)} players
-  - processed_college_stats.csv
-  - processed_nfl_rookie_stats.csv
-
-TARGET VARIABLE (>={SNAP_THRESHOLD} snaps):
-  - Contributors: {len(contributors)} ({len(contributors)/len(trainable)*100:.1f}%)
-  - Non-contributors: {len(non_contributors)} ({len(non_contributors)/len(trainable)*100:.1f}%)
-  - Min contributor snaps: {int(contributors["total_snaps"].min()) if len(contributors) > 0 else "N/A"}
-
-COHORTS:
-  - TRAIN (2022): {len(master_clean[master_clean["cohort"]=="TRAIN"])} players
-  - VALIDATE (2024): {len(master_clean[master_clean["cohort"]=="VALIDATE"])} players
-  - HOLDOUT (2025): {len(master_clean[master_clean["cohort"]=="HOLDOUT"])} players
-
-VISUALIZATIONS:
-  - {FIGURES_DIR / "eda_raw_data.png"}
-  - {FIGURES_DIR / "eda_processed_data.png"}
-
-DATA QUALITY: {"ALL CHECKS PASSED" if all_passed else "SOME CHECKS FAILED"}
-
-Next: Run phase03_baseline_model.py
-''')

@@ -31,9 +31,6 @@ print('='*70)
 print('PHASE 9: SCOUTING INSIGHTS & DRAFT ANALYSIS')
 print('='*70)
 
-# =============================================================================
-# LOAD DATA
-# =============================================================================
 
 train = pd.read_csv(PROCESSED_DIR / 'train_composite_features.csv')
 val = pd.read_csv(PROCESSED_DIR / 'val_composite_features.csv')
@@ -69,9 +66,6 @@ val['pred_prob'] = model.predict_proba(X_val_scaled)[:, 1]
 
 print(f'TRAIN: {len(train)}, VAL: {len(val)}, HOLDOUT: {len(holdout)}')
 
-# =============================================================================
-# TASK 1: DRAFT ROUND VS CONTRIBUTOR RATE
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 1: DRAFT ROUND VS CONTRIBUTOR RATE')
@@ -121,9 +115,6 @@ plt.savefig(FIGURES_DIR / 'draft_round_contributor_rate.png', dpi=150)
 print(f'\n[OK] Saved: {FIGURES_DIR / "draft_round_contributor_rate.png"}')
 plt.close()
 
-# =============================================================================
-# TASK 2: DECISION TREE RULES
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 2: DECISION TREE RULES (Quotable Insights)')
@@ -161,9 +152,6 @@ leaf_stats.columns = ['n_players', 'n_contributors', 'contributor_rate']
 print('\n--- Leaf Node Analysis ---')
 print(leaf_stats)
 
-# =============================================================================
-# TASK 3: QUANTIFIED MODEL VALUE
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 3: QUANTIFIED MODEL VALUE')
@@ -190,9 +178,6 @@ for k in [10, 20, 30]:
 
 pd.DataFrame(model_value).to_csv(MODELS_DIR / 'model_value_analysis.csv', index=False)
 
-# =============================================================================
-# TASK 4: ATHLETIC ARCHETYPES
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 4: ATHLETIC ARCHETYPES (Cluster Analysis)')
@@ -289,9 +274,6 @@ plt.savefig(FIGURES_DIR / 'athletic_archetypes.png', dpi=150)
 print(f'\n[OK] Saved: {FIGURES_DIR / "athletic_archetypes.png"}')
 plt.close()
 
-# =============================================================================
-# TASK 5: TOP PLAYER PROFILE
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 5: TOP PLAYER PROFILE')
@@ -332,9 +314,6 @@ for col, lower_better, label in profile_metrics:
             player_profile[col] = pct
             print(f'  {label}: {pct:.0f}th percentile')
 
-# =============================================================================
-# TASK 6: COMPARABLE PLAYERS
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 6: COMPARABLE PLAYERS (From 2022 Contributors)')
@@ -365,9 +344,6 @@ for i, idx in enumerate(indices[0]):
     print(f'  {i+1}. {name} ({pos}) - {similarity*100:.0f}% similar profile')
     comparables.append({'name': name, 'position': pos, 'similarity': similarity})
 
-# =============================================================================
-# TASK 7: SCOUTING RECOMMENDATIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('TASK 7: SCOUTING RECOMMENDATIONS')
@@ -395,48 +371,7 @@ for tier in ['HIGH CONFIDENCE (75%+)', 'LIKELY CONTRIBUTOR (60-74%)', 'POSSIBLE 
         print(f'\n{tier} ({len(tier_players)} players):')
         print(f'  {names}{"..." if len(tier_players) > 5 else ""}')
 
-# =============================================================================
-# QUOTABLE INSIGHTS SUMMARY
-# =============================================================================
-
 print('\n' + '='*70)
-print('QUOTABLE INSIGHTS FOR PRESENTATION')
+print('PHASE 9: COMPLETE')
 print('='*70)
 
-# Calculate specific stats for quotes
-db_high_agility = train[(train.get('pos_DB', pd.Series([0]*len(train))) == 1)]
-if len(db_high_agility) > 0:
-    db_rate = db_high_agility['target'].mean() * 100
-else:
-    db_rate = train[train['position_group'] == 'DB']['target'].mean() * 100 if 'position_group' in train.columns else 0
-
-top30_lift = val.nlargest(30, 'pred_prob')['target'].mean() / val['target'].mean()
-best_archetype_rate = archetype_stats['contributor_rate'].max() * 100
-
-print(f'''
-QUOTABLE INSIGHTS:
-
-1. DECISION RULE:
-   "DBs have a {db_rate:.0f}% contributor rate vs {train["target"].mean()*100:.1f}% baseline"
-
-2. MODEL VALUE:
-   "Our Top 30 recommendations identify {top30_lift:.1f}x more contributors than random selection"
-   
-3. ARCHETYPE INSIGHT:
-   "Speed-Agility Elite athletes have the highest contributor rate at {best_archetype_rate:.0f}%"
-
-4. TOP PROSPECT:
-   "{top_player.get("football_name", "Unknown")} is our #1 pick at {top_player["pred_prob"]*100:.0f}% probability,
-   ranking in the {player_profile.get("composite_agility", 0):.0f}th percentile for agility"
-
-5. COMPARABLE SUCCESS:
-   "Similar athletic profiles from 2022 achieved NFL contributor status"
-''')
-
-print('\n[COMPLETE] Phase 9: Scouting Insights & Draft Analysis')
-print(f'\nDeliverables:')
-print(f'  - {FIGURES_DIR / "draft_round_contributor_rate.png"}')
-print(f'  - {FIGURES_DIR / "decision_rules.png"}')
-print(f'  - {FIGURES_DIR / "athletic_archetypes.png"}')
-print(f'  - {MODELS_DIR / "scouting_recommendations.csv"}')
-print(f'  - {MODELS_DIR / "model_value_analysis.csv"}')

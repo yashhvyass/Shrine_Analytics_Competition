@@ -14,9 +14,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_auc_score, classification_report, confusion_matrix
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
 
 PROCESSED_DIR = Path(__file__).parent / 'processed'
 MODELS_DIR = Path(__file__).parent / 'models'
@@ -33,9 +30,6 @@ print('PHASE 3: BASELINE MODEL (COMBINE FEATURES ONLY)')
 print('='*70)
 print(f'\nTarget: >= 300 rookie snaps (HIGH-IMPACT contributor)')
 
-# =============================================================================
-# STEP 1: LOAD DATA
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 1: LOADING DATA')
@@ -76,9 +70,6 @@ print(f'Target distribution (TRAIN):')
 print(f'  Contributors: {int(y_train.sum())} ({y_train.mean()*100:.1f}%)')
 print(f'  Non-contributors: {int((y_train==0).sum())} ({(y_train==0).mean()*100:.1f}%)')
 
-# =============================================================================
-# STEP 3: HANDLE MISSING VALUES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 3: HANDLING MISSING VALUES')
@@ -92,9 +83,6 @@ X_holdout = X_holdout.fillna(medians)
 
 print(f'[OK] Filled missing values with training medians')
 
-# =============================================================================
-# STEP 4: SCALE FEATURES
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 4: SCALING FEATURES')
@@ -107,9 +95,6 @@ X_holdout_scaled = scaler.transform(X_holdout)
 
 print(f'[OK] Features standardized (mean=0, std=1)')
 
-# =============================================================================
-# STEP 5: TRAIN MODELS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 5: TRAINING MODELS')
@@ -138,9 +123,6 @@ rf_val_auc = roc_auc_score(y_val, rf.predict_proba(X_val_scaled)[:, 1])
 print(f'  Train AUC: {rf_train_auc:.4f}')
 print(f'  Val AUC: {rf_val_auc:.4f}')
 
-# =============================================================================
-# STEP 6: SELECT BEST MODEL
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 6: MODEL COMPARISON')
@@ -157,9 +139,6 @@ best_val_auc = max(rf_val_auc, lr_val_auc)
 
 print(f'\n[BEST] {best_name}: Val AUC = {best_val_auc:.4f}')
 
-# =============================================================================
-# STEP 7: SAVE PREDICTIONS
-# =============================================================================
 
 print('\n' + '='*70)
 print('STEP 7: GENERATING PREDICTIONS')
@@ -179,9 +158,6 @@ print(f'[OK] Saved: {MODELS_DIR / "predictions_baseline.csv"}')
 print('\nTop 10 Predicted Contributors (2025):')
 print(predictions[['rank', 'football_name', 'position', 'pred_prob']].head(10).to_string(index=False))
 
-# =============================================================================
-# SUMMARY
-# =============================================================================
 
 print('\n' + '='*70)
 print('PHASE 3: BASELINE COMPLETE')
