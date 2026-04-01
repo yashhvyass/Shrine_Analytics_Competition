@@ -58,39 +58,6 @@ Athletic Archetypes — K-Means clustering (4 clusters) identifying Speed-Agilit
 Player Comparables — Nearest-neighbor matching against historical contributors
 Draft Round Analysis — Contributor rate by draft position for ROI context
 
-## Repository Structure
-
-├── 01_data_exploration.py          # EDA and master dataset creation
-├── 02_feature_engineering.py       # Tracking data feature extraction (Polars)
-├── 03_baseline_model.py            # Baseline model (combine-only)
-├── 04_tracking_features.py         # Combined model (combine + tracking)
-├── 05_position_features.py         # Position-aware features
-├── 06_composite_features.py        # Composite scores and interactions
-├── 07_feature_selection.py         # Feature selection and calibration
-├── 08_final_model.py               # Full evaluation (SHAP, bootstrap, ROC, predictions)
-├── 09_scouting_insights.py         # Scouting deliverables and archetypes
-├── processed/                      # Intermediate datasets
-│   ├── master_dataset_clean.csv
-│   ├── tracking_features.csv
-│   ├── train_*.csv / val_*.csv / holdout_*.csv
-│   └── processed_college_stats.csv
-├── models/                         # Model outputs
-│   ├── predictions_2025_FINAL.csv
-│   ├── scouting_recommendations.csv
-│   ├── feature_importance_final.csv
-│   ├── confidence_intervals.csv
-│   └── threshold_analysis.csv
-├── figures/                        # Visualizations
-│   ├── shap_summary.png
-│   ├── roc_curve.png
-│   ├── calibration_curve.png
-│   ├── athletic_archetypes.png
-│   ├── decision_rules.png
-│   ├── draft_round_contributor_rate.png
-│   └── ...
-├── LICENSE
-└── README.md
-
 ## Requirements
 Python 3.9+
 pandas, numpy, scikit-learn, matplotlib
