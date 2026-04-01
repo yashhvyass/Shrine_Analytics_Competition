@@ -58,7 +58,8 @@ Athletic Archetypes — K-Means clustering (4 clusters) identifying Speed-Agilit
 Player Comparables — Nearest-neighbor matching against historical contributors
 Draft Round Analysis — Contributor rate by draft position for ROI context
 
-Repository Structure
+## Repository Structure
+
 ├── 01_data_exploration.py          # EDA and master dataset creation
 ├── 02_feature_engineering.py       # Tracking data feature extraction (Polars)
 ├── 03_baseline_model.py            # Baseline model (combine-only)
@@ -110,4 +111,5 @@ python 07_feature_selection.py
 python 08_final_model.py
 python 09_scouting_insights.py
 
-## Note: Raw data files (shrine_bowl_players.parquet, tracking data directories, etc.) are not included in this repo. Place them in the project root before running. Phases 5–9 also require a config.py file with shared constants (position mappings, model params, directory paths).
+## Note: 
+Raw data files (shrine_bowl_players.parquet, tracking data directories, etc.) are not included in this repo. Place them in the project root before running. Phases 5–9 also require a config.py file with shared constants (position mappings, model params, directory paths).
